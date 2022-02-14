@@ -1,0 +1,320 @@
+{
+  "jsonForms": {
+    "controls": [
+      {
+        "id": "1",
+        "name": "Declaration_Response_ID",
+        "label": "Declaration Response ID",
+        "placeholder": "",
+        "tooltip": "Identifier of a document providing additional information",
+        "value": "",
+        "hide": "true",
+        "showSearchInput": true,
+        "type": "text",
+        "options": [],
+        "validators": {
+          "required": "true",
+          "max": "20"
+        }
+      },
+      {
+        "id": "2",
+        "name": "Declaration_Response_ID",
+        "label": "Declaration Response ID",
+        "placeholder": "",
+        "tooltip": "Identifier of a document providing additional information",
+        "value": "",
+        "hide": "true",
+        "showSearchInput": true,
+        "type": "text",
+        "options": [],
+        "validators": {
+          "required": "true",
+          "max": "20"
+        }
+      },
+      {
+        "name": "Document_Status",
+        "label": "Document Status",
+        "placeholder": "",
+        "hide": "true",
+        "tooltip": "Code specifying the status of a document",
+        "showSearchInput": true,
+        "value": "",
+        "options": [
+          {
+            "name": "Accepted",
+            "label": "Accepted",
+            "icon": "",
+            "hide": "false"
+          },
+          {
+            "name": "Rejected",
+            "label": "Rejected",
+            "icon": "",
+            "hide": "false"
+          },
+          {
+            "name": "Cancelled",
+            "label": "Cancelled",
+            "icon": "",
+            "hide": "false"
+          },
+          {
+            "name": "Provisional",
+            "label": "Provisional",
+            "icon": "",
+            "hide": "false"
+          }
+        ],
+        "type": "select",
+        "validators": {}
+      },
+      {
+        "name": "Transport_Mode",
+        "label": "Transport Mode",
+        "placeholder": "",
+        "tooltip": "ics.Tooltip.declaration.modeCode",
+        "showSearchInput": true,
+        "hide": "true",
+        "value": "",
+        "options": [],
+        "type": "select",
+        "validators": {}
+      },
+      {
+        "name": "Bill_of_Lading_Number",
+        "label": "Bill of Lading Number",
+        "placeholder": "",
+        "tooltip": "Identifier of a document providing additional information",
+        "showSearchInput": true,
+        "value": "",
+        "hide": "true",
+        "options": [],
+        "type": "text",
+        "validators": {}
+      },
+      {
+        "name": "Submission_Date",
+        "label": "Submission Date",
+        "placeholder": "Submission Date",
+        "hide": "true",
+        "tooltip": "Submission Date",
+        "showSearchInput": true,
+        "value": "",
+        "type": "date",
+        "options": [
+          {
+            "name": "start_Date",
+            "label": "Start Date",
+            "value": ""
+          },
+          {
+            "name": "End_Date",
+            "label": "End Date",
+            "value": ""
+          }
+        ],
+        "validators": {}
+      },
+
+      {
+        "name": "button",
+        "type": "button",
+        "options": [
+          {
+            "name": "Submit",
+            "label": "Submit",
+            "showTableColumn": false,
+            "showSearchInput": true,
+            "iconType": "search",
+            "type": "primary",
+            "value": "",
+            "method": {},
+            "click": "ahhd"
+          },
+          {
+            "name": "Reset",
+            "label": "Reset",
+            "showTableColumn": false,
+            "showSearchInput": true,
+            "iconType": "close-circle",
+            "type": "default",
+            "value": "",
+            "click": "resetForm()"
+          }
+        ]
+      },
+
+      {
+        "name": "Table",
+        "value": "",
+        "label": "Search Results",
+        "type": "table",
+        "ShowPagination": true,
+
+        "options": [
+          {
+            "name": "Registration_Number",
+            "label": "Registration Number",
+            "hide": "false",
+            "sort": "true"
+          },
+          {
+            "name": "Declaration_Type",
+            "label": "Declaration Type",
+            "hide": "false",
+            "sort": "true"
+          },
+          {
+            "name": "Status",
+            "label": "Status",
+            "hide": "false",
+            "sort": "true"
+          },
+          {
+            "name": "Submission_Date",
+            "label": "Submission Date",
+            "hide": "false",
+            "sort": "true"
+          },
+          {
+            "name": "Custom_Office",
+            "label": "Custom Office",
+            "hide": "false",
+            "sort": "true"
+          },
+          {
+            "name": "Action",
+            "label": "Action",
+            "hide": "false",
+            "sort": "false"
+          }
+        ],
+        "showTable": true,
+        "tableLinks": true
+      }
+    ]
+  },
+
+  "Table": {
+    "columns": [
+      {
+        "name": "Registration_Number",
+        "label": "Registration Number",
+        "sort": "true",
+        "sortKey": "RegistrationNumber",
+        "hide": "true"
+      },
+      {
+        "name": "Declaration_Type",
+        "label": "Declaration Type",
+        "sort": "true",
+        "sortKey": "DeclarationType",
+        "hide": "true"
+      },
+      {
+        "name": "Status",
+        "label": "Status",
+        "sort": "true",
+        "sortKey": "Status",
+        "hide": "true"
+      },
+      {
+        "name": "Submission_Date",
+        "label": "Submission Date",
+        "sort": "true",
+        "sortKey": "SubmissionDate",
+        "hide": "true"
+      },
+      {
+        "name": "Customs_Office",
+        "label": "Customs Office",
+        "sort": "true",
+        "sortKey": "CustomsOffice",
+        "hide": "true"
+      },
+      {
+        "name": "Actions",
+        "label": "Actions",
+        "sort": "true",
+        "sortKey": "Actions",
+        "hide": "true",
+        "options": []
+      }
+    ]
+  },
+
+  "data": [
+    {
+      "id": 1,
+      "Registration_Number": "67156235563",
+      "Declaration_Type": "Export from Bonded Warehouse",
+      "Status": "Accepted",
+      "Submission_Date": "13-Feb-2022",
+      "Custom_Office": "Coastal Customs Centers Management",
+      "statusCode": "29",
+      "Action": [
+        {
+          "name": "view",
+          "icon": "eye",
+          "prefLink": "../view-form",
+          "suffLink": ""
+        },
+        {
+          "name": "Edit",
+          "icon": "edit",
+          "prefLink": "/app/ics-declaration/update-form",
+          "suffLink": "Edit"
+        },
+        {
+          "name": "Amend",
+          "icon": "edit",
+          "prefLink": "",
+          "suffLink": "Amend"
+        },
+        {
+          "name": "copy to new",
+          "icon": "snippets",
+          "prefLink": "/app/ics-declaration/update-form",
+          "suffLink": "copy"
+        },
+        {
+          "name": "Delete",
+          "icon": "close-circle",
+          "prefLink": "",
+          "suffLink": "Deleted"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "Registration_Number": "67156235564",
+      "Declaration_Type": "Export from Bonded Warehouse",
+      "Status": "Accepted",
+      "Submission_Date": "13-Feb-2022",
+      "Custom_Office": "Coastal Customs Centers Management",
+      "statusCode": "29",
+      "Action": [
+        {
+          "name": "view",
+          "icon": "eye",
+          "prefLink": "../view-form",
+          "suffLink": ""
+        },
+        {
+          "name": "Edit",
+          "icon": "edit",
+          "prefLink": "/app/ics-declaration/update-form",
+          "suffLink": "Edit"
+        },
+        {
+          "name": "Amend",
+          "icon": "edit",
+          "prefLink": "",
+          "suffLink": "Amend"
+        }
+      ]
+    }
+  ]
+}

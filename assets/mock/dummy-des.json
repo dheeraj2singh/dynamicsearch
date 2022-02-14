@@ -1,0 +1,14 @@
+{ "resultList": [
+    {
+        "fileType": "application/pdf",
+        "sizeKB": 200,
+        "fileName": "Passport",
+        "mandatory": false
+    },
+    {
+        "fileType": "image/jpeg,image/gif",
+        "sizeKB": 200,
+        "fileName": "Photo",
+        "mandatory": false
+    }
+]}

@@ -1,0 +1,14 @@
+{
+  "Error.invalid.status": "Invalid document status, not in draft mode",
+  "Error.dmn.result.empty": "DMN result must not empty!",
+  "Error.des.response.invalid": "DES Service response not expected:",
+  "Error.delete.child": "Failed to delete child element",
+  "Error.already.inprocess": "Not allowed to update, as already in process!",
+  "Error.Invalid.Identifier": "Status must have Identifier",
+  "Error.upload.file": "Error uplaod declaration",
+  "Error.invalid.xsd": "Uploaded xml is invalid",
+  "Error.upload.declaration": "Error processing declaration",
+  "Error.invalid.mimetype": "Could not determine file type",
+  "Error.clone.issue": "Error issue while cloning",
+  "Error.declaration.general": ""
+}

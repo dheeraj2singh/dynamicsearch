@@ -1,0 +1,1506 @@
+{
+	"lpco": {
+		"transportMovementCode": {
+			"uid": "08323",
+			"labels": [
+			  "ics.Label.declaration.transportMovementCode"
+			],
+			"tooltip": "ics.Tooltip.declaration.transportMovementCode",
+			"format": "an..3",
+			"refTypeCode": "tred8323",
+			"validations": {
+			  "systems": "RDM",
+			  "size-min": "0",
+			  "size-max": "3",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		  },
+		"acceptanceDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.acceptanceDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.acceptanceDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"cancellationDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.cancellationDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.cancellationDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"declarationOfficeID": {
+			"uid": "03225",
+			"labels": [
+				"Label.lpco.declarationOfficeID" 
+			],
+			"tooltip": "Tooltip.lpco.declarationOfficeID",
+			"format": "an..17",
+			"refTypeCode" : "ics-customs-office",
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"effectiveDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.effectiveDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.effectiveDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "Date"
+		}, 
+		"expirationDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.expirationDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.expirationDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "Date"
+		}, 
+		"identifier": {
+			"uid": "01004",
+			"labels": [
+				"Label.lpco.identifier" 
+			],
+			"tooltip": "Tooltip.lpco.identifier",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"issueDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.issueDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.issueDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "Date"
+		}, 
+		"issueLocation": {
+			"uid": "03410",
+			"labels": [
+				"Label.lpco.issueLocation" 
+			],
+			"tooltip": "Tooltip.lpco.issueLocation",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"issueLocationID": {
+			"uid": "03411",
+			"labels": [
+				"Label.lpco.issueLocationID" 
+			],
+			"tooltip": "Tooltip.lpco.issueLocationID",
+			"format": "an..5",
+			"refTypeCode": "LPDepartcode",
+			"validations": {
+				"size-min": "0", 
+				"size-max": "6", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,6}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"languageCode": {
+			"uid": "03453",
+			"labels": [
+				"Label.lpco.languageCode" 
+			],
+			"tooltip": "Tooltip.lpco.languageCode",
+			"format": "an..3",
+			"refTypeCode": "tred3453",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"loadingListQuantity": {
+			"uid": "06061",
+			"labels": [
+				"Label.lpco.loadingListQuantity" 
+			],
+			"tooltip": "Tooltip.lpco.loadingListQuantity",
+			"format": "n..5",
+			
+			"validations": {
+				"digits-integer": "5", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,5}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "Integer"
+		}, 
+		"name": {
+			"uid": "01000",
+			"labels": [
+				"Label.lpco.name" 
+			],
+			"tooltip": "Tooltip.lpco.name",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"originalIndicator": {
+			"uid": "04366",
+			"labels": [
+				"Label.lpco.originalIndicator" 
+			],
+			"tooltip": "Tooltip.lpco.originalIndicator",
+			"format": "an1",
+			
+			"validations": {
+				"size-min": "1", 
+				"size-max": "1", 
+				"pattern": "^[a-zA-Z0-9]{1}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"rejectionDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.rejectionDateTime" 
+			],
+			"tooltip": "Tooltip.lpco.rejectionDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"statusCode": {
+			"uid": "01373",
+			"labels": [
+				"Label.lpco.statusCode" 
+			],
+			"tooltip": "Tooltip.lpco.statusCode",
+			"format": "an..3",
+			"refTypeCode": "tred1373",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"typeCode": {
+			"uid": "01001",
+			"labels": [
+				"Label.lpco.typeCode" 
+			],
+			"tooltip": "Tooltip.lpco.typeCode",
+			"format": "an..3",
+			"refTypeCode": "Lpdocslist",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"usageCode": {
+			"uid": "07365",
+			"labels": [
+				"Label.lpco.usageCode" 
+			],
+			"tooltip": "Tooltip.lpco.usageCode",
+			"format": "an..3",
+			"refTypeCode": "Lpusagecode",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"versionID": {
+			"uid": "01057",
+			"labels": [
+				"Label.lpco.versionID" 
+			],
+			"tooltip": "Tooltip.lpco.versionID",
+			"format": "an..9",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "9", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,9}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"binaryFile": {
+
+		"description": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.description" 
+			],
+			"tooltip": "Tooltip.binaryFile.description",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"fileNameText": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.fileNameText" 
+			],
+			"tooltip": "Tooltip.binaryFile.fileNameText",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"mimeCode": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.mimeCode" 
+			],
+			"tooltip": "Tooltip.binaryFile.mimeCode",
+			"format": "an..70",
+			"refTypeCode":"Mimecode",
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"sizeMeasure": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.sizeMeasure" 
+			],
+			"tooltip": "Tooltip.binaryFile.sizeMeasure",
+			"format": "n..16,6",
+			
+			"validations": {
+				"digits-integer": "16", 
+				"digits-fraction": "6", 
+				"pattern": "^\\d{0,16}(\\.\\d{0,6})$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "Double"
+		}, 
+		"title": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.title" 
+			],
+			"tooltip": "Tooltip.binaryFile.title",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"typeCode": {
+			"uid": "00N/A",
+			"labels": [
+				"Label.lpco.additionalDocument.binaryFile.typeCode" 
+			],
+			"tooltip": "Tooltip.binaryFile.typeCode",
+			"format": "an..6",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "6", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,6}$"
+			},
+			"tabs": "Documents",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"additionalInformation": {
+
+		"content": {
+			"uid": "04440",
+			"labels": [
+				"Label.lpco.additionalInformation.content",  
+				"Label.lpco.consignment.consignmentItem.commodity.additionalInformation.content" 
+			],
+			"tooltip": "Tooltip.additionalInformation.content",
+			"format": "an..512",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "512", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+			},
+			"tabs": "HeaderInfo,Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"sequenceNumeric": {
+			"uid": "01050",
+			"labels": [
+				"Label.lpco.additionalInformation.sequenceNumeric" 
+			],
+			"tooltip": "Tooltip.additionalInformation.sequenceNumeric",
+			"format": "n..5",
+			
+			"validations": {
+				"digits-integer": "5", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,5}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "Integer"
+		}, 
+		"statementCode": {
+			"uid": "04441",
+			"labels": [
+				"Label.lpco.additionalInformation.statementCode" 
+			],
+			"tooltip": "Tooltip.additionalInformation.statementCode",
+			"format": "an..17",
+			"refTypeCode": "umscodes4441",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"statementDescription": {
+			"uid": "04440",
+			"labels": [
+				"Label.lpco.additionalInformation.statementDescription" 
+			],
+			"tooltip": "Tooltip.additionalInformation.statementDescription",
+			"format": "an..512",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "512", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"statementTypeCode": {
+			"uid": "04451",
+			"labels": [
+				"Label.lpco.additionalInformation.statementTypeCode",  
+				"Label.lpco.consignment.consignmentItem.commodity.additionalInformation.statementTypeCode" 
+			],
+			"tooltip": "Tooltip.additionalInformation.statementTypeCode",
+			"format": "an..3",
+			"refTypeCode": "tred4451",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo,Items",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"authorisedPerson": {
+
+		"identifier": {
+			"uid": "03039",
+			"labels": [
+				"Label.lpco.authorisedPerson.identifier" 
+			],
+			"tooltip": "Tooltip.authorisedPerson.identifier",
+			"format": "an..17",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"name": {
+			"uid": "03036",
+			"labels": [
+				"Label.lpco.authorisedPerson.name" 
+			],
+			"tooltip": "Tooltip.authorisedPerson.name",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Parties,Items",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"roleCode": {
+			"uid": "03035",
+			"labels": [
+				"Label.lpco.authorisedPerson.roleCode" 
+			],
+			"tooltip": "Tooltip.authorisedPerson.roleCode",
+			"format": "an..3",
+			"refTypeCode": "tred3035",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"address": {
+
+		"cityName": {
+			"uid": "03164",
+			"labels": [
+				"Label.lpco.authorisedPerson.address.cityName",  
+				"Label.lpco.exporter.address.cityName" 
+			],
+			"tooltip": "Tooltip.address.cityName",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"countryName": {
+			"uid": "03206",
+			"labels": [
+				"Label.lpco.authorisedPerson.address.countryName",  
+				"Label.lpco.exporter.address.countryName" 
+			],
+			"tooltip": "Tooltip.address.countryName",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"line": {
+			"uid": "03042",
+			"labels": [
+				"Label.lpco.authorisedPerson.address.line",  
+				"Label.lpco.exporter.address.line" 
+			],
+			"tooltip": "Tooltip.address.line",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"typeCode": {
+			"uid": "03131",
+			"labels": [
+				"Label.lpco.authorisedPerson.address.typeCode",  
+				"Label.lpco.exporter.address.typeCode" 
+			],
+			"tooltip": "Tooltip.address.typeCode",
+			"format": "an..3",
+			"refTypeCode": "tred3131",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"borderTransportMeans": {
+
+		"arrivalDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.consignment.borderTransportMeans.arrivalDateTime" 
+			],
+			"tooltip": "Tooltip.borderTransportMeans.arrivalDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"departureDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.consignment.borderTransportMeans.departureDateTime" 
+			],
+			"tooltip": "Tooltip.borderTransportMeans.departureDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"journeyID": {
+			"uid": "08028",
+			"labels": [
+				"Label.lpco.consignment.borderTransportMeans.journeyID" 
+			],
+			"tooltip": "Tooltip.borderTransportMeans.journeyID",
+			"format": "an..17",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"modeCode": {
+			"uid": "08067",
+			"labels": [
+				"Label.lpco.consignment.borderTransportMeans.modeCode" 
+			],
+			"tooltip": "Tooltip.borderTransportMeans.modeCode",
+			"format": "n1",
+			"refTypeCode": "tred8067",
+			"validations": {
+				"systems": "RDM", 
+				"digits-integer": "1", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,1}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Integer"
+		}	}, 
+	"additionalDocument": {
+
+		"identifier": {
+			"uid": "01004",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.additionalDocument.identifier",  
+				"Label.lpco.consignment.consignmentItem.commodity.additionalDocument.identifier" 
+			],
+			"tooltip": "Tooltip.additionalDocument.identifier",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"typeCode": {
+			"uid": "01001",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.additionalDocument.typeCode",  
+				"Label.lpco.consignment.consignmentItem.commodity.additionalDocument.typeCode" 
+			],
+			"tooltip": "Tooltip.additionalDocument.typeCode",
+			"format": "an..3",
+			"refTypeCode": "tred1001,umscodes1001",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"commodity": {
+
+		"countQuantity": {
+			"uid": "06061",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.countQuantity" 
+			],
+			"tooltip": "Tooltip.commodity.countQuantity",
+			"format": "n..16",
+			
+			"validations": {
+				"digits-integer": "16", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,16}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Integer"
+		}, 
+		"intendedUse": {
+			"uid": "07008",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.intendedUse" 
+			],
+			"tooltip": "Tooltip.commodity.intendedUse",
+			"format": "an..256",
+			"refTypeCode":"Lpindedusecode",	
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"jurisdictionDateTime": {
+			"uid": "02380",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.jurisdictionDateTime" 
+			],
+			"tooltip": "Tooltip.commodity.jurisdictionDateTime",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Date"
+		}, 
+		"sequenceNumeric": {
+			"uid": "01050",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.sequenceNumeric" 
+			],
+			"tooltip": "Tooltip.commodity.sequenceNumeric",
+			"format": "n..5",
+			
+			"validations": {
+				"digits-integer": "5", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,5}$"
+			},
+			"tabs": "Items",
+			"systemField": true,
+			"mandatory": true,
+			"type": "Integer"
+		}	}, 
+	"classification": {
+
+		"bindingTariffReferenceID": {
+			"uid": "01154",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.classification.bindingTariffReferenceID" 
+			],
+			"tooltip": "Tooltip.classification.bindingTariffReferenceID",
+			"format": "an..35",
+		     "refTypeCode":"hsCode",
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$", 
+				"systems": "HSCode"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"product": {
+
+		"identifier": {
+			"uid": "07402",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.product.identifier" 
+			],
+			"tooltip": "Tooltip.product.identifier",
+			"format": "an..25",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "25", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,25}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"productCharacteristics": {
+
+		"description": {
+			"uid": "07008",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.productCharacteristics.description" 
+			],
+			"tooltip": "Tooltip.productCharacteristics.description",
+			"format": "an..256",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "256", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"qualifierCode": {
+			"uid": "07081",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.productCharacteristics.qualifierCode" 
+			],
+			"tooltip": "Tooltip.productCharacteristics.qualifierCode",
+			"format": "an..3",
+			"refTypeCode": "tred7081",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"productName": {
+
+		"description": {
+			"uid": "07002",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.productName.description" 
+			],
+			"tooltip": "Tooltip.productName.description",
+			"format": "an..35",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "35", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"qualifierCode": {
+			"uid": "07081",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.commodity.productName.qualifierCode" 
+			],
+			"tooltip": "Tooltip.productName.qualifierCode",
+			"format": "an..3",
+			"refTypeCode": "tred7081",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"productUsage": {
+		"expirationDateTime": {
+			"uid": "07081",
+			"labels": [
+				"LPCO.Consignment.ConsignmentItem.Commodity.ProductUsage" 
+			],
+			"tooltip": "Tooltip.Consignment.ConsignmentItem.Commodity.ProductUsage",
+			"format": "an..3",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "Date"
+		}
+	}, 
+	"exportCountry": {
+
+		"countryCode": {
+			"uid": "03207",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.exportCountry.countryCode" 
+			],
+			"tooltip": "Tooltip.exportCountry.countryCode",
+			"format": "a2",
+			"refTypeCode": "tred3207",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "2", 
+				"size-max": "2", 
+				"pattern": "^[a-zA-Z]{2}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"goodsMeasure": {
+
+		"exportedInCurrentYearQuantity": {
+			"uid": "06061",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.goodsMeasure.exportedInCurrentYearQuantity" 
+			],
+			"tooltip": "Tooltip.goodsMeasure.exportedInCurrentYearQuantity",
+			"format": "n..15",
+			
+			"validations": {
+				"digits-integer": "15", 
+				"digits-fraction": "0", 
+				"pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": false,
+			"type": "Integer"
+		}, 
+		"functionCode": {
+			"uid": "06311",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.goodsMeasure.functionCode" 
+			],
+			"tooltip": "Tooltip.goodsMeasure.functionCode",
+			"format": "an..3",
+			"refTypeCode": "tred6311",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}, 
+		"netNetWeightMeasure": {
+			"uid": "06048",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.goodsMeasure.netNetWeightMeasure" 
+			],
+			"tooltip": "Tooltip.goodsMeasure.netNetWeightMeasure",
+			"format": "n..16,6",
+			
+			"validations": {
+				"digits-integer": "16", 
+				"digits-fraction": "6", 
+				"pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "Double"
+		}, 
+		"tariffQuantity": {
+			"uid": "06102",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.goodsMeasure.tariffQuantity" 
+			],
+			"tooltip": "Tooltip.goodsMeasure.tariffQuantity",
+			"format": "n..16,6",
+			
+			"validations": {
+				"digits-integer": "16", 
+				"digits-fraction": "6", 
+				"pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "Double"
+		}	}, 
+	"origin": {
+
+		"countryCode": {
+			"uid": "03207",
+			"labels": [
+				"Label.lpco.consignment.consignmentItem.origin.countryCode" 
+			],
+			"tooltip": "Tooltip.origin.countryCode",
+			"format": "a2",
+			"refTypeCode": "tred3207",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "2", 
+				"size-max": "2", 
+				"pattern": "^[a-zA-Z]{2}$"
+			},
+			"tabs": "Items",
+			"systemField": false,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"loadingLocation": {
+
+		"identifier": {
+			"uid": "03225",
+			"labels": [
+				"Label.lpco.consignment.loadingLocation.identifier" 
+			],
+			"tooltip": "Tooltip.loadingLocation.identifier",
+			"format": "an..17",
+			"refTypeCode": "umscodes3225",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"transportContractDocument": {
+
+		"identifier": {
+			"uid": "01004",
+			"labels": [
+				"Label.lpco.consignment.transportContractDocument.identifier" 
+			],
+			"tooltip": "Tooltip.transportContractDocument.identifier",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"unloadingLocation": {
+
+		"identifier": {
+			"uid": "03225",
+			"labels": [
+				"Label.lpco.consignment.unloadingLocation.identifier" 
+			],
+			"tooltip": "Tooltip.unloadingLocation.identifier",
+			"format": "an..17",
+			"refTypeCode": "umscodes3225",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"exporter": {
+
+		"identifier": {
+			"uid": "03039",
+			"labels": [
+				"Label.lpco.exporter.identifier" 
+			],
+			"tooltip": "Tooltip.exporter.identifier",
+			"format": "an..17",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"name": {
+			"uid": "03036",
+			"labels": [
+				"Label.lpco.exporter.name" 
+			],
+			"tooltip": "Tooltip.exporter.name",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Parties",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"importer": {
+
+		"identifier": {
+			"uid": "03039",
+			"labels": [
+				"Label.lpco.importer.identifier" 
+			],
+			"tooltip": "Tooltip.importer.identifier",
+			"format": "an..17",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"name": {
+			"uid": "03036",
+			"labels": [
+				"Label.lpco.importer.name" 
+			],
+			"tooltip": "Tooltip.importer.name",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Parties",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"agent": {
+
+		"identifier": {
+			"uid": "03039",
+			"labels": [
+				"Label.lpco.obligationGuarantee.declaration.agent.identifier" 
+			],
+			"tooltip": "Tooltip.agent.identifier",
+			"format": "an..17",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"name": {
+			"uid": "03036",
+			"labels": [
+				"Label.lpco.obligationGuarantee.declaration.agent.name" 
+			],
+			"tooltip": "Tooltip.agent.name",
+			"format": "an..70",
+			
+			"validations": {
+				"size-min": "0", 
+				"size-max": "70", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+			},
+			"tabs": "Parties",
+			"systemField": true,
+			"mandatory": false,
+			"type": "String"
+		}, 
+		"roleCode": {
+			"uid": "03035",
+			"labels": [
+				"Label.lpco.obligationGuarantee.declaration.agent.roleCode" 
+			],
+			"tooltip": "Tooltip.agent.roleCode",
+			"format": "an..3",
+			"refTypeCode": "tred3035",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "Parties",
+			"systemField": false,
+			"mandatory": false,
+			"type": "String"
+		}	}, 
+	"amendment": {
+
+		"changeReasonCode": {
+			"uid": "04295",
+			"labels": [
+				"Label.lpco.obligationGuarantee.declaration.amendment.changeReasonCode" 
+			],
+			"tooltip": "Tooltip.amendment.changeReasonCode",
+			"format": "an..3",
+			"refTypeCode": "tred4295",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "3", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "String"
+		}	}, 
+	"responsibleGovernmentAgency": {
+		"nameCode": {
+			"uid": "04295",
+			"labels": [
+				"Label.lpco.responsibleGovernmentAgency.nameCode" 
+			],
+			"tooltip": "Tooltip.responsibleGovernmentAgency.nameCode",
+			"format": "an..3",
+			"refTypeCode": "LPMinistrycode",
+			"validations": {
+				"systems": "RDM", 
+				"size-min": "0", 
+				"size-max": "17", 
+				"pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+			},
+			"tabs": "HeaderInfo",
+			"systemField": true,
+			"mandatory": true,
+			"type": "String"
+		}
+	},
+	"response": {
+		"functionCode": {
+		   "uid": "01225",
+		   "labels": [
+			  "ums.Label.response.functionCode"
+		   ],
+		   "tooltip": "ums.Tooltip.response.functionCode",
+		   "format": "n..2",
+		   "refTypeCode": "tred1225",
+		   "validations": {
+			  "systems": "RDM",
+			  "digits-integer": "2",
+			  "digits-fraction": "0",
+			  "pattern": "^\\d{0,2}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "Integer"
+		},
+		"identifier": {
+		   "uid": "01004",
+		   "labels": [
+			  "ums.Label.response.identifier"
+		   ],
+		   "tooltip": "ums.Tooltip.response.identifier",
+		   "format": "an..70",
+		   "validations": {
+			  "size-min": "0",
+			  "size-max": "70",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,70}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		},
+		"replyTypeCode": {
+		   "uid": "04343",
+		   "labels": [
+			  "ums.Label.response.replyTypeCode"
+		   ],
+		   "tooltip": "ums.Tooltip.response.replyTypeCode",
+		   "format": "an..3",
+		   "refTypeCode": "tred4343,umscodes4343",
+		   "validations": {
+			  "systems": "RDM",
+			  "size-min": "0",
+			  "size-max": "3",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,3}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		},
+		"typeCode": {
+		   "uid": "01001",
+		   "labels": [
+			  "ums.Label.response.typeCode"
+		   ],
+		   "tooltip": "ums.Tooltip.response.typeCode",
+		   "format": "an..3",
+		   "refTypeCode": "tred1001,umscodes1001",
+		   "validations": {
+			  "systems": "RDM",
+			  "size-min": "0",
+			  "size-max": "3",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,3}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		},
+		"versionID": {
+		   "uid": "01057",
+		   "labels": [
+			  "ums.Label.response.versionID"
+		   ],
+		   "tooltip": "ums.Tooltip.response.versionID",
+		   "format": "an..9",
+		   "validations": {
+			  "size-min": "0",
+			  "size-max": "9",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,9}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		}
+	 },
+	 "error": {
+		"description": {
+		   "uid": "04440",
+		   "labels": [
+			  "ums.Label.response.error.description"
+		   ],
+		   "tooltip": "ums.Tooltip.error.description",
+		   "format": "an..512",
+		   "validations": {
+			  "size-min": "0",
+			  "size-max": "512",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,512}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		},
+		"validationCode": {
+		   "uid": "09321",
+		   "labels": [
+			  "ums.Label.response.error.validationCode"
+		   ],
+		   "tooltip": "ums.Tooltip.error.validationCode",
+		   "format": "an..8",
+		   "refTypeCode": "umscodes9321",
+		   "validations": {
+			  "systems": "RDM",
+			  "size-min": "0",
+			  "size-max": "8",
+			  "pattern": "^[a-zA-Z0-9_\\- ]{0,8}$"
+		   },
+		   "tabs": "",
+		   "systemField": true,
+		   "mandatory": false,
+		   "type": "String"
+		}
+	 }
+}

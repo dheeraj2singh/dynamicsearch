@@ -28,11 +28,33 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/mock",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "**/*",
+                "input": "./node_modules/ngx-monaco-editor/assets/monaco",
+                "output": "./assets/monaco/"
+              }
             ],
             "styles": [
-              "src/styles.less"
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+
+              "src/styles/styles.less",
+              "src/styles/theme.less",
+              "src/styles/styles.rtl.less",
+              "src/styles/formbuilder-icons-embedded.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles/styles.less",
+                "src/styles/theme.less"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -94,11 +116,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "less",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
               "src/styles.less"
             ],
             "scripts": []

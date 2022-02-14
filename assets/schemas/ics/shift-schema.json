@@ -1,0 +1,126 @@
+{
+    "shift": {
+        "shiftName": {
+         "labels": [
+            "ics.Label.shift.shiftName"
+         ],
+         "tooltip": "ics.Tooltip.declaration.acceptanceDateTime",        
+         "mandatory": true
+        },
+        "shiftType": {
+            "labels": [
+            "ics.Label.shift.shiftType"
+            ],
+            "tooltip": "ics.Tooltip.declaration.cancellationDateTime",      
+            "mandatory": true
+        },
+        "acceptanceDateTime": {
+            "labels": [
+            "ics.Label.shift.effectiveDateTime"
+            ],
+            "tooltip": "ics.Tooltip.declaration.effectiveDateTime",      
+            "mandatory": true
+        },
+        "expirationDateTime": {
+            "labels": [
+            "ics.Label.shift.expirationDateTime"
+            ],  
+            "tooltip": "ics.Tooltip.declaration.acceptanceDateTime",    
+            "mandatory": true
+        },
+        "maximumResource": {
+            "labels": [
+            "ics.Label.shift.maximumResource"
+            ],   
+            "tooltip": "ics.Tooltip.declaration.acceptanceDateTime",   
+            "mandatory": true
+        },
+        "locationType": {
+            "labels": [
+            "ics.Label.shift.locationType"
+            ],     
+            "tooltip": "ics.Tooltip.declaration.acceptanceDateTime", 
+            "mandatory": true
+        },
+        
+        "considerHolidays": {
+            "labels": [
+            "ics.Label.shift.considerHolidays"
+            ],     
+            "tooltip": "ics.Tooltip.declaration.acceptanceDateTime", 
+            "mandatory": false
+        },
+        "active": {
+            "labels": [
+            "ics.Label.shift.active"
+            ],     
+            "tooltip": "ics.Tooltip.declaration.acceptanceDateTime", 
+            "mandatory": false
+        }
+    },
+    "group": {
+        "groupName": {
+           "uid": "02380",
+           "labels": [
+              "ics.Label.group.groupName"
+           ],
+           "tooltip": "ics.Tooltip.declaration.acceptanceDateTime",        
+           "mandatory": true,
+           "pattern": "^[a-zA-Z0-9 ]*$"
+        },
+        "daysOff": {
+            "uid": "02380",
+            "labels": [
+               "ics.Label.group.daysOff"
+            ],
+            "tooltip": "ics.Tooltip.group.daysOff",        
+            "mandatory": false
+         },
+        "inspectionType": {
+            "labels": [
+            "ics.Label.group.inspectionType"
+            ],
+        "tooltip": "ics.Tooltip.declaration.cancellationDateTime",      
+        "mandatory": true
+        },
+        "acceptanceDateTime": {
+            "labels": [
+            "ics.Label.group.effectiveDateTime"
+            ],
+        "tooltip": "ics.Tooltip.declaration.effectiveDateTime",      
+        "mandatory": true
+        },
+        "expirationDateTime": {
+        "labels": [
+            "ics.Label.shift.expirationDateTime"
+        ],     
+        "mandatory": true
+        },
+        "inspectionLocation": {
+        "labels": [
+            "ics.Label.group.inspectionLocation"
+        ],     
+        "mandatory": true
+        },            
+        "resouceType": {
+            "labels": [
+            "ics.Label.group.resouceType"
+            ],
+            "tooltip": "ics.Tooltip.declaration.cancellationDateTime",      
+            "mandatory": true
+        },
+        "skillType": {
+            "labels": [
+            "ics.Label.group.skillType"
+            ],
+            "tooltip": "ics.Tooltip.declaration.effectiveDateTime",      
+            "mandatory": false
+        },
+        "hsChapter": {
+            "labels": [
+            "ics.Label.group.hsChapter"
+            ],     
+            "mandatory": false
+        }
+    }  
+}

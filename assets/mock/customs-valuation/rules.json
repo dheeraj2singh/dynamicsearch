@@ -1,0 +1,156 @@
+{
+  "cvTargetFieldGroups": [
+    {
+      "id": 1,
+      "code": "",
+      "label": "vehicle",
+	    "description":"vehicle",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "HS Code",
+          "description": "HS Code",
+          "controlType" : "hscode",
+          "mode" : "default",
+          "refTypeCode": "tariff",
+          "refType":"tariff"
+        },
+        {
+          "id": 9,
+          "type": "string",
+          "label": "COO (Country Of Origin)",
+          "description": "COO (Country Of Origin)",
+          "controlType" : "dropdown",
+          "refTypeCode": "tred3207",
+          "mode" : "default",
+          "refType":"tred3207"
+        },
+        {
+          "id": 11,
+          "type": "string",
+          "label": "Brand",
+          "description": "Brand",
+          "controlType": "dropdown",
+          "refTypeCode": "vehiclemake",
+          "mode" : "default",          
+          "refType":"vehiclemake"
+        },
+        {
+          "id": 13,
+          "type": "string",
+          "label": "Model",
+          "description": "Model",
+          "mode" : "default",
+          "controlType": "input"
+        },
+        {
+          "id": 21,
+          "type": "string",
+          "label": "Manufacturing Year",
+          "description": "Manufacturing Year",
+          "mode" : "default",
+          "controlType": "input"
+        },
+        {
+          "id": 22,
+          "type": "string",
+          "label": "Color",
+          "description": "Color",
+          "controlType": "dropdown",
+          "refTypeCode": "vehcolor",
+          "mode" : "default",
+          "refType":"vehcolor"
+        },
+        {
+          "id": 23,
+          "type": "string",
+          "label": "Fuel Type",
+          "description": "Fuel Type",
+          "controlType": "dropdown",
+          "refTypeCode": "vehfuel",
+          "mode" : "default",
+          "refType":"vehfuel"
+        },
+        {
+          "id": 24,
+          "type": "string",
+          "label": "Transmission Type",
+          "description": "Transmission Type",
+          "mode" : "default",
+          "controlType": "input"
+        },
+        {
+          "id": 24,
+          "type": "integer",
+          "label": "Engine Capacity",
+          "description": "Engine Capacity",
+          "mode" : "default",
+          "controlType": "input"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "gold",
+	    "description":"gold",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "HS Code",
+          "description": "HS Code",
+          "mode" : "default",
+          "controlType" : "hscode",
+          "refTypeCode": "tariff"
+        },
+        {
+          "id": 9,
+          "type": "string",
+          "label": "COO (Country Of Origin)",
+          "description": "COO (Country Of Origin)",
+          "mode" : "default",
+          "controlType" : "dropdown",
+          "refTypeCode": "tred3207",
+          "refType":"tred3207"
+        },
+        {
+          "id": 24,
+          "type": "string",
+          "label": "Purity Of Gold",
+          "description": "Purity Of Gold",
+          "mode" : "default",
+          "controlType": "input"
+        }
+      ]
+    },
+	{
+      "id": 3,
+      "code": "",
+      "label": "normal",
+	    "description":"normal",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "HS Code",
+          "description": "HS Code",
+          "mode" : "default",
+          "controlType" : "hscode",
+          "refTypeCode": "tariff"
+        },
+        {
+          "id": 9,
+          "type": "string",
+          "label": "COO (Country Of Origin)",
+          "description": "COO (Country Of Origin)",
+          "mode" : "default",
+          "controlType" : "dropdown",
+          "refTypeCode": "tred3207",
+          "refType":"tred3207"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+<nz-skeleton [nzActive]="true" [nzLoading]="loading" nz-row>
+  <form nz-form [nzLayout]="'vertical'" [formGroup]="myForm" nz-col>
+    <h1>
+      Advance Search
+      <a class="collapse" (click)="toggleCollapse()"
+        >More
+        <i nz-icon [nzType]="isCollapse ? 'down' : 'up'"></i>
+      </a>
+    </h1>
+    <nz-divider class="mt0 mb-lg"></nz-divider>
+    <ng-template class="clear-both" [ngIf]="true">
+      <div nz-row>
+        <ng-container *ngFor="let control of jsonFormData?.controls">
+          <ng-template
+            [ngIf]="
+              [
+                'text',
+                'password',
+                'email',
+                'number',
+                'search',
+                'tel',
+                'url'
+              ].includes(control.type)
+            "
+          >
+            <div
+              *ngIf="
+                (control.showSearchInput &&
+                  (control['id'] == '1' || control['id'] == '2')) ||
+                showField
+              "
+              class="cola"
+              nz-col
+              nzXs="24"
+              nzSm="24"
+              nzMd="24"
+              nzLg="12"
+              nzXl="12"
+            >
+              <nz-form-item class="pr-md">
+                <nz-form-label [nzFor]="control.label"
+                  >{{ control.label }}
+                  <i
+                    nz-icon
+                    nzType="question-circle"
+                    nz-tooltip
+                    nzTheme="outline"
+                    [nzTooltipTitle]="control.tooltip"
+                    class="tooltip"
+                  ></i
+                ></nz-form-label>
+                <nz-form-control>
+                  <input
+                    [placeholder]="control.placeholder"
+                    [formControlName]="control.name"
+                    nz-input
+                    [name]="control.name"
+                    [type]="control.type"
+                    [id]="control.name"
+                  />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </ng-template>
+
+          <ng-template [ngIf]="control.type === 'select' && showField">
+            <div
+              *ngIf="control.showSearchInput"
+              class="cola"
+              nz-col
+              nzXs="24"
+              nzSm="24"
+              nzMd="24"
+              nzLg="12"
+              nzXl="12"
+            >
+              <nz-form-item class="pr-md">
+                <nz-form-label [nzFor]="control.label"
+                  >{{ control.label }}
+                  <i
+                    nz-icon
+                    nzType="question-circle"
+                    nz-tooltip
+                    nzTheme="outline"
+                    [nzTooltipTitle]="control.tooltip"
+                    class="tooltip"
+                  ></i
+                ></nz-form-label>
+                <nz-form-control>
+                  <nz-select
+                    *ngIf="control.showSearchInput"
+                    (ngModelChange)="statusChange()"
+                    [formControlName]="control.name"
+                    [nzPlaceHolder]="control.placeholder"
+                    nzAllowClear
+                    nzShowSearch
+                  >
+                    <nz-option
+                      *ngFor="let option of control.options"
+                      [nzValue]="option['label']"
+                      [nzLabel]="option['label']"
+                      [nzHide]="!option['hide']"
+                    ></nz-option>
+                  </nz-select>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </ng-template>
+
+          <ng-template [ngIf]="control.type === 'date' && showField">
+            <div
+              *ngIf="control.showSearchInput"
+              class="cola"
+              nz-col
+              nzXs="24"
+              nzSm="24"
+              nzMd="24"
+              nzLg="12"
+              nzXl="12"
+            >
+              <nz-form-item class="pr-md">
+                <nz-form-label labelName="control?.label"
+                  >{{ control.label }}
+                  <i
+                    nz-icon
+                    nzType="question-circle"
+                    nz-tooltip
+                    nzTheme="outline"
+                    [nzTooltipTitle]="control.tooltip"
+                    class="tooltip"
+                  ></i
+                ></nz-form-label>
+                <nz-form-control>
+                  <div nz-row>
+                    <ng-template ngFor let-date [ngForOf]="control?.options">
+                      <div
+                        nz-col
+                        nzXs="24"
+                        nzSm="24"
+                        nzMd="24"
+                        nzLg="12"
+                        nzXl="12"
+                        class="pr-md mob-mb-md"
+                      >
+                        <nz-date-picker
+                          [nzPlaceHolder]="date['label']"
+                          nzFormat="dd-MMM-yyyy"
+                          *ngIf="control.showSearchInput"
+                          [formControlName]="date['name']"
+                        ></nz-date-picker>
+                      </div>
+                    </ng-template>
+                  </div>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+          </ng-template>
+
+          <ng-template [ngIf]="control.name == 'button'">
+            <div
+              class="cola"
+              nz-col
+              nzXs="24"
+              nzSm="24"
+              nzMd="24sele"
+              nzLg="24"
+              nzXl="24"
+            >
+              <div class="floatR" *ngFor="let btn of control.options">
+                <button
+                  nz-button
+                  (click)="(btn['click'])"
+                  class="mr-lg mob-mr-md"
+                  [nzLoading]="loading"
+                  [nzType]="btn['type']"
+                >
+                  <i nz-icon [nzType]="btn['iconType']" nzTheme="outline"></i>
+                  {{ btn["label"] }}
+                </button>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template [ngIf]="control.type == 'table'">
+            <br />
+            <br />
+            <h3>Search Result</h3>
+            <nz-divider class="mt-sm mb0"></nz-divider>
+            <nz-skeleton [nzActive]="true" [nzLoading]="loadingList">
+              <nz-table
+                #basicTable
+                [nzData]="tableData"
+                class="mt-lg"
+                [nzFrontPagination]="false"
+                [nzLoading]="loading"
+                [nzTotal]="total"
+                [(nzPageIndex)]="pageIndex"
+                [(nzPageSize)]="pageSize"
+                (nzPageIndexChange)="submitForm()"
+                (nzPageSizeChange)="submitForm(true)"
+                [nzScroll]="{ x: '300px' }"
+              >
+                <thead nzSingleSort>
+                  <tr>
+                    <ng-template ngFor let-column [ngForOf]="control.options">
+                      <ng-template [ngIf]="column['hide'] == 'false'">
+                        <th
+                          class="tablehd"
+                          nzSortKey="hello"
+                          [nzShowSort]="column['sort']"
+                          [nzColumnKey]="column['label']"
+                          [nzFilterMultiple]="false"
+                        >
+                          <span class="no-wrap">{{ column["label"] }}</span>
+                        </th>
+                      </ng-template>
+                    </ng-template>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of basicTable.data">
+                    <ng-template ngFor let-col [ngForOf]="control.options">
+                      <td
+                        *ngIf="
+                          col['name'] != 'Action' && col['hide'] == 'false'
+                        "
+                      >
+                        {{ data[col["name"]] }}
+                      </td>
+
+                      <td *ngIf="col['name'] == 'Action'" nzRight="0">
+                        <a nz-button nz-dropdown [nzDropdownMenu]="menu">
+                          <i nz-icon nzType="more"></i
+                        ></a>
+                        <nz-dropdown-menu
+                          #menu="nzDropdownMenu"
+                          nzTrigger="click"
+                        >
+                          <ul
+                            nz-menu
+                            nzSelectable
+                            *ngFor="let action of data[col['name']]"
+                          >
+                            <!--<li nz-menu-item>
+                              <a
+                                id="view"
+                                (click)="
+                                  navigateTo(
+                                    action['link'],
+                                    data.id,
+                                    action['suffLink']
+                                  )
+                                "
+                              >
+                                <i
+                                  nz-icon
+                                  [nzType]="action['icon']"
+                                  nzTheme="outline"
+                                ></i
+                                >{{ action["name"] }}</a
+                              >
+                            </li>-->
+
+                            <li
+                              id="delete"
+                              nz-menu-item
+                              *ngIf="data['statusCode'] == 29"
+                            >
+                              <a
+                                nz-popconfirm
+                                nzPopconfirmTitle="Are you sure?"
+                                (click)="
+                                  navigateTo(
+                                    action['link'],
+                                    data.id,
+                                    action['suffLink']
+                                  )
+                                "
+                                nzOkText="ok"
+                                nzCancelText="cancel"
+                                (nzOnConfirm)="
+                                  confirm(data.id, action['suffLink'])
+                                "
+                                (nzOnCancel)="cancel()"
+                              >
+                                <i
+                                  nz-icon
+                                  [nzType]="action['icon']"
+                                  nzTheme="outline"
+                                ></i>
+                                {{ action["name"] }}</a
+                              >
+                            </li>
+                          </ul>
+                        </nz-dropdown-menu>
+                      </td>
+                    </ng-template>
+                  </tr>
+                </tbody>
+              </nz-table>
+            </nz-skeleton>
+          </ng-template>
+        </ng-container>
+      </div>
+    </ng-template>
+  </form>
+</nz-skeleton>

@@ -1,0 +1,71 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "label": "Pass Type",
+            "description": "Pass Type",
+            "status": "Active",
+            "parentRefType": null,
+            "attributesSchema": [],
+            "refValue": [
+                {
+                    "id": 3,
+                    "refTypeId": 1,
+                    "parentRefValue": 0,
+                    "code": "Visitor Pass",
+                    "description": "Visitor Pass",
+                    "effectiveDateFrom": "2019-06-19T20:00:00.000+0000",
+                    "refLang": [
+                        {
+                            "id": 4,
+                            "langCode": "en",
+                            "langDescription": "Visitor Pass"
+                        }
+                    ],
+                    "attributes": null
+                },
+                {
+                    "id": 6,
+                    "refTypeId": 1,
+                    "parentRefValue": 0,
+                    "code": "Temporary  Gate Pass",
+                    "description": "Temporary  Gate Pass",
+                    "effectiveDateFrom": "2019-06-19T20:00:00.000+0000",
+                    "refLang": [
+                        {
+                            "id": 7,
+                            "langCode": "en",
+                            "langDescription": "Temporary  Gate Pass"
+                        }
+                    ],
+                    "attributes": null
+                }
+            ]
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "sorted": false,
+            "unsorted": true,
+            "empty": true
+        },
+        "offset": 0,
+        "pageSize": 20,
+        "pageNumber": 0,
+        "unpaged": false,
+        "paged": true
+    },
+    "totalPages": 1,
+    "totalElements": 1,
+    "last": true,
+    "size": 20,
+    "number": 0,
+    "sort": {
+        "sorted": false,
+        "unsorted": true,
+        "empty": true
+    },
+    "numberOfElements": 1,
+    "first": true,
+    "empty": false
+ }

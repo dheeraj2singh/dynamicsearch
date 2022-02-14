@@ -1,0 +1,14 @@
+{
+  "Error.invalid.status": "Недействительный статус документа, не в режиме черновика",
+  "Error.dmn.result.empty": "Результат DMN не должен быть пустым!",
+  "Error.des.response.invalid": "Ответ услуги DES не ожидается:",
+  "Error.delete.child": "Не удалось удалить дочерний элемент",
+  "Error.already.inprocess": "Обновление недопустимо, уже выполняется!",
+  "Error.Invalid.Identifier": "Статус должен иметь идентификатор",
+  "Error.upload.file": "Ошибка загрузки декларации",
+  "Error.invalid.xsd": "Загружен недействительный xml",
+  "Error.upload.declaration": "Ошибка обработки декларации",
+  "Error.invalid.mimetype": "Не удалось определить тип файла",
+  "Error.clone.issue": "Ошибка при клонировании",
+  "Error.declaration.general": ""
+}

@@ -1,0 +1,140 @@
+
+  {
+    "string": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      },
+      {
+        "id": 2,
+        "label": "Not Equal",
+        "value": "not"
+      },
+      {
+        "id": 3,
+        "label": "IN",
+        "value": "in"
+      },
+      {
+        "id": 4,
+        "label": "Contains",
+        "value": "contains"
+      }
+    ],
+    "integer": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      },
+      {
+        "id": 2,
+        "label": "Less",
+        "value": "<"
+      },
+      {
+        "id": 3,
+        "label": "Less or Equal",
+        "value": "<="
+      },
+      {
+        "id": 4,
+        "label": "Greater",
+        "value": ">"
+      },
+      {
+        "id": 5,
+        "label": "Greater or Equal",
+        "value": ">="
+      }
+    ],
+    "long": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      },
+      {
+        "id": 2,
+        "label": "Less",
+        "value": "<"
+      },
+      {
+        "id": 3,
+        "label": "Less or Equal",
+        "value": "<="
+      },
+      {
+        "id": 4,
+        "label": "Greater",
+        "value": ">"
+      },
+      {
+        "id": 5,
+        "label": "Greater or Equal",
+        "value": ">="
+      }
+    ],
+    "double": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      },
+      {
+        "id": 2,
+        "label": "Less",
+        "value": "<"
+      },
+      {
+        "id": 3,
+        "label": "Less or Equal",
+        "value": "<="
+      },
+      {
+        "id": 4,
+        "label": "Greater",
+        "value": ">"
+      },
+      {
+        "id": 5,
+        "label": "Greater or Equal",
+        "value": ">="
+      }
+    ],
+    "boolean": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      }
+    ],
+    "date": [
+      {
+        "id": 1,
+        "label": "Equal",
+        "value": "=="
+      },
+      {
+        "id": 2,
+        "label": "Less",
+        "value": "<"
+      },
+      {
+        "id": 3,
+        "label": "Less or Equal",
+        "value": "<="
+      },
+      {
+        "id": 4,
+        "label": "Greater",
+        "value": ">"
+      },
+      {
+        "id": 5,
+        "label": "Greater or Equal",
+        "value": ">="
+      }
+    ]
+  }

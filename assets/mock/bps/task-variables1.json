@@ -1,0 +1,16 @@
+{
+  "aTaskVariableKey": {
+    "value": {
+      "property1": "aPropertyValue2",
+      "property2": false
+    },
+    "type": "ExampleVariableObject"
+  },
+  "aTaskVariableKey2": {
+    "value": {
+      "property1": "aPropertyValue2",
+      "property2": false
+    },
+    "type": "ExampleVariableObject2"
+  }
+}

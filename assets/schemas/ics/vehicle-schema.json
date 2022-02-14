@@ -1,0 +1,102 @@
+{
+    "vehicle": {
+        "hsCode": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.hsCode"],
+            "tooltip": "ics.Tooltip.vehicle.hsCode",
+            "qualifierCode": "196",
+            "typeCode": "HSC",
+            "type": "String"
+        },
+        "make": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.make"],
+            "tooltip": "ics.Tooltip.vehicle.make",
+            "qualifierCode": "223",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "70345",
+            "type": "String"
+        },
+        "type": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.type"],
+            "tooltip": "ics.Tooltip.vehicle.type",
+            "qualifierCode": "202",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "68707",
+            "type": "String"
+        },
+        "chassisNumber": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.chassisNumber"],
+            "tooltip": "ics.Tooltip.vehicle.chassisNumber",
+            "qualifierCode": "140",
+            "type": "String"
+        },
+        "model": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.model"],
+            "tooltip": "ics.Tooltip.vehicle.model",
+            "qualifierCode": "221",
+            "type": "String"
+        },
+        "color": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.color"],
+            "tooltip": "ics.Tooltip.vehicle.color",
+            "qualifierCode": "35",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "68759",
+            "type": "String"
+        },
+        "engineNumber": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.engineNumber"],
+            "tooltip": "ics.Tooltip.vehicle.engineNumber",
+            "qualifierCode": "135",
+            "type": "String"
+        },
+        "engineCapacity": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.engineCapacity"],
+            "tooltip": "ics.Tooltip.vehicle.engineCapacity",
+            "qualifierCode": "207",
+            "type": "String"
+        },
+        "yearBuilt": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.yearBuilt"],
+            "tooltip": "ics.Tooltip.vehicle.yearBuilt",
+            "qualifierCode": "60",
+            "typeCode": "YEB",
+            "type": "String"
+        },
+        "condition": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.condition"],
+            "tooltip": "ics.Tooltip.vehicle.condition",
+            "qualifierCode": "203",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "68777",
+            "type": "String"
+        },
+        "drive": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.drive"],
+            "tooltip": "ics.Tooltip.vehicle.drive",
+            "qualifierCode": "206",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "68785",
+            "type": "String"
+        },
+        "fuelType": {
+            "uid": "07009",
+            "labels": ["ics.Label.vehicle.fuelType"],
+            "tooltip": "ics.Tooltip.vehicle.fuelType",
+            "qualifierCode": "147",
+            "refTypeCode": "umscodes7008",
+            "parentRefType": "68793",
+            "type": "String"
+        }
+    }
+}

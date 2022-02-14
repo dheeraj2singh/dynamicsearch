@@ -1,0 +1,16 @@
+{
+    "token": {
+        "accessToken": "cb8979dc-22aa-3524-8115-9bc6210988b8",
+        "refreshToken": "48e3856b-5aae-3c09-9a4e-39823bb29a6c",
+        "scope": "default",
+        "tokenType": "Bearer",
+        "expiresIn": 36002
+    },
+    "user": {
+        "firstName": "root",
+        "lastName": "root",
+        "email": "PRIMARY/root",
+        "blk": false
+    },
+    "scope": []
+}

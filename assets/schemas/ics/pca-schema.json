@@ -1,0 +1,301 @@
+{
+    "pca": {
+        "declarationNo": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.declarationNo"
+            ],
+            "tooltip": "ics-postclearanceaudit.declarationNo",
+            "type": "String",
+            "tabs": ""
+        },
+        "traderName": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.traderName"
+            ],
+            "tooltip": "ics-postclearanceaudit.traderName",
+            "type": "String",
+            "tabs": ""
+        },
+        "referenceNumber": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.referenceNumber"
+            ],
+            "tooltip": "ics-postclearanceaudit.referenceNumber",
+            "type": "String",
+            "tabs": ""
+        },
+        "countryOfOrigin": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.countryOfOrigin"
+            ],
+            "tooltip": "ics-postclearanceaudit.countryOfOrigin",
+            "rdmKey": "tred3207",
+            "type": "String",
+            "tabs": ""
+        },
+        "commodityClassification": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.commodityClassification"
+            ],
+            "tooltip": "ics-postclearanceaudit.commodityClassification",
+            "type": "String",
+            "tabs": ""
+        },
+        "pcaStatus": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.pcaStatus"
+            ],
+            "tooltip": "ics-postclearanceaudit.pcaStatus",
+            "rdmKey": "ics-pca-status",
+            "type": "String",
+            "tabs": ""
+        },
+        "expiryDateRange": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.expiryDateRange"
+            ],
+            "tooltip": "ics-postclearanceaudit.expiryDateRange",
+            "type": "Date",
+            "tabs": ""
+        },
+        "pcaCompliant": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.compliant"
+            ],
+            "tooltip": "ics-postclearanceaudit.compliant",
+            "type": "string",
+            "tabs": ""
+        },
+        "assignToCDM": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.assignToCDM"
+            ],
+            "tooltip": "ics-postclearanceaudit.assignToCDM",
+            "type": "string",
+            "tabs": ""
+        },
+        "pcaOutcome": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.pcaOutcome"
+            ],
+            "tooltip": "ics-postclearanceaudit.pcaOutcome",
+            "type": "string",
+            "tabs": ""
+        },
+        "reasonForRejection": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.reasonForRejection"
+            ],
+            "tooltip": "ics-postclearanceaudit.reasonForRejection",
+            "type": "string",
+            "tabs": ""
+        },
+        "assignComment": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.assignComment"
+            ],
+            "tooltip": "ics-postclearanceaudit.assignComment",
+            "type": "string",
+            "tabs": ""
+        },
+        "contactDetail": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.contactDetail"
+            ],
+            "tooltip": "ics-postclearanceaudit.contactDetail",
+            "type": "number",
+            "tabs": ""
+        },
+        "auditType": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.auditType"
+            ],
+            "tooltip": "ics-postclearanceaudit.auditType",
+            "rdmKey": "ics-pca-audittype",
+            "type": "string",
+            "tabs": ""
+        },
+        "auditCategory": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.auditCategory"
+            ],
+            "tooltip": "ics-postclearanceaudit.auditCategory",
+            "rdmKey": "ics-pca-auditcategory",
+            "type": "string",
+            "tabs": ""
+        },
+        "plannedDateTime": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.plannedDateTime"
+            ],
+            "tooltip": "ics-postclearanceaudit.plannedDateTime",
+            "type": "string",
+            "tabs": ""
+        },
+        "pcaLocation": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.pcaLocation"
+            ],
+            "tooltip": "ics-postclearanceaudit.pcaLocation",
+            "type": "string",
+            "tabs": ""
+        },
+        "submitterRemarks": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.submitterRemarks"
+            ],
+            "tooltip": "ics-postclearanceaudit.submitterRemarks",
+            "type": "string",
+            "tabs": ""
+        },
+        "mitigationAction": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.mitigationAction"
+            ],
+            "tooltip": "ics-postclearanceaudit.mitigationAction",
+            "rdmKey": "ics-pca-mitigationaction",
+            "type": "string",
+            "tabs": ""
+        },
+        "inspectionAssignedTo": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.inspectionAssignedTo"
+            ],
+            "tooltip": "ics-postclearanceaudit.inspectionAssignedTo",
+            "rdmKey": "ics-pca-inspectionassignedto",
+            "type": "string",
+            "tabs": ""
+        },
+        "reasonForAudit": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.reasonForAudit"
+            ],
+            "tooltip": "ics-postclearanceaudit.reasonForAudit",
+            "rdmKey": "ics-pca-reasonforaudit",
+            "type": "string",
+            "tabs": ""
+        },
+        "additionalInformationToAuditors": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.additionalInformationToAuditors"
+            ],
+            "tooltip": "ics-postclearanceaudit.additionalInformationToAuditors",
+            "type": "string",
+            "tabs": ""
+        },
+        "reasonForNonCompliance": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.reasonForNonCompliance"
+            ],
+            "rdmKey":"ics-pca-reasonfornnoncompliance",
+            "tooltip": "ics-postclearanceaudit.reasonForNonCompliance",
+            "type": "string",
+            "tabs": ""
+        },
+        "furtherAction" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.furtherAction"
+            ],
+            "rdmKey":"ics-pca-furtheraction",
+            "tooltip": "ics-postclearanceaudit.furtherAction",
+            "type": "string",
+            "tabs": ""
+        },
+        "pcaComments" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.pcaComments"
+            ],
+            "tooltip": "ics-postclearanceaudit.pcaComments",
+            "format": "an..100",
+            "validations": {
+                "size-min": "0",
+                "max": "100",
+                "pattern": "^[a-zA-Z0-9_\\- ]{0,100}$"
+              },
+            "mandatory": true,
+            "type": "string",
+            "tabs": ""
+        },
+        "addCharges" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.addCharges"
+            ],
+            "tooltip": "ics-postclearanceaudit.charges",
+            "type": "string",
+            "tabs": ""
+        },
+        "chargeType" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.chargeType"
+            ],
+            "rdmKey": "ics-pca-chargetype",
+            "tooltip": "ics-postclearanceaudit.charges",
+            "type": "string",
+            "tabs": ""
+        },
+        "amount" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.amount"
+            ],
+            "type": "string",
+            "tabs": ""
+        },
+        "closingComments" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.closingComments"
+            ],
+            "type": "string",
+            "tabs": ""
+        },
+        "regime" :{
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.regime"
+            ],
+            "type": "string",
+            "tabs": "",
+            "rdmKey": "tred8323"
+        },
+        "schedulePca": {
+            "uid": "000",
+            "labels": [
+                "ics-postclearanceaudit.schedulePca"
+            ],
+            "tooltip": "ics-postclearanceaudit.schedulePca",
+            "rdmKey": "ics-treatment-recommended-treatment",
+            "type": "string",
+            "tabs": ""
+        }
+    }
+}
+
+

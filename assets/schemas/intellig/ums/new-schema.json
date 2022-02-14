@@ -1,0 +1,1863 @@
+{
+  "manifest": {
+    "functionCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.declaration.functionCode"
+      ],
+      "tooltip": "Tooltip.declaration.functionCode",
+      "format": "n..2",
+      "refTypeCode": "tred1225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "identifier": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.identifier",
+        "Label.response.declaration.identifier"
+      ],
+      "tooltip": "Tooltip.declaration.identifier",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "languageCode": {
+      "uid": "03453",
+      "labels": [
+        "Label.declaration.languageCode"
+      ],
+      "tooltip": "Tooltip.declaration.languageCode",
+      "format": "an..3",
+      "refTypeCode": "tred3453",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "specificCircumstancesCode": {
+      "uid": "07365",
+      "labels": [
+        "Label.declaration.specificCircumstancesCode"
+      ],
+      "tooltip": "Tooltip.declaration.specificCircumstancesCode",
+      "format": "an..3",
+      "refTypeCode": "umscodes7365",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "declarantCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.declarantCode"
+      ],
+      "tooltip": "Tooltip.declaration.declarantCode",
+      "format": "an..17",
+
+
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+      },
+    "statusCode": {
+      "uid": "01373",
+      "labels": [
+        "Label.manifest.statusCode",
+        "Label.response.declaration.statusCode"
+      ],
+      "tooltip": "Tooltip.declaration.statusCode",
+      "format": "an..3",
+      "refTypeCode": "tred1373",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "totalGrossMassMeasure": {
+      "uid": "06092",
+      "labels": [
+        "Label.declaration.totalGrossMassMeasure"
+      ],
+      "tooltip": "Tooltip.declaration.totalGrossMassMeasure",
+      "format": "n..16,6",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "totalPackageQuantity": {
+      "uid": "07365",
+      "labels": [
+        "Label.declaration.totalPackageQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.totalPackageQuantity",
+      "format": "n..8",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "typeCode": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.typeCode"
+      ],
+      "tooltip": "Tooltip.declaration.typeCode",
+      "format": "an..3",
+      "refTypeCode": "umscodes1001",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": true,
+      "type": "String"
+    },
+    "masterBillofLadingNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.all.masterBillofLadingNumber",
+        "Label.declaration.air.masterBillofLadingNumber"
+      ],
+      "tooltip": "Tooltip.declaration.masterBillofLadingNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "movementInfo": {
+      "uid": "01000",
+      "labels": [
+        "Label.declaration.all.movementInfo",
+        "Label.declaration.air.movementInfo"
+      ],
+      "tooltip": "Tooltip.declaration.movementInfo",
+      "format": "an..35",
+      "refTypeCode": "umsmovement",
+      "parentRefType": "",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "submitterRemarks": {
+      "uid": "04440",
+      "labels": [
+        "Label.declaration.submitterRemarks"
+      ],
+      "tooltip": "Tooltip.declaration.submitterRemarks",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": true,
+      "type": "String"
+    },
+    "statementCode": {
+      "uid": "04441",
+      "labels": [
+        "Label.declaration.statementCode"
+      ],
+      "tooltip": "Tooltip.declaration.statementCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes4441",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "statementDescription": {
+      "uid": "04440",
+      "labels": [
+        "Label.declaration.statementDescription"
+      ],
+      "tooltip": "Tooltip.declaration.statementDescription",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "changeReasonCode": {
+      "uid": "04295",
+      "labels": [
+        "Label.declaration.changeReasonCode"
+      ],
+      "tooltip": "Tooltip.declaration.changeReasonCode",
+      "format": "an..3",
+      "refTypeCode": "umscodes4295",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "voyageNumber": {
+      "uid": "08028",
+      "labels": [
+        "Label.declaration.all.voyageNumber",
+        "Label.declaration.air.voyageNumber"
+      ],
+      "tooltip": "Tooltip.declaration.voyageNumber",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "modeCode": {
+      "uid": "08067",
+      "labels": [
+        "Label.declaration.modeCode"
+      ],
+      "tooltip": "Tooltip.declaration.modeCode",
+      "format": "n1",
+      "refTypeCode": "tred8067",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "nameOfTransport": {
+      "uid": "08212",
+      "labels": [
+        "Label.declaration.nameOfTransport"
+      ],
+      "tooltip": "Tooltip.declaration.nameOfTransport",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "transportNationality": {
+      "uid": "08453",
+      "labels": [
+        "Label.declaration.transportNationality"
+      ],
+      "tooltip": "Tooltip.declaration.transportNationality",
+      "format": "a2",
+      "refTypeCode": "tred8453",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "2",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z]{2}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "transportEquipmentQuantity": {
+      "uid": "08046",
+      "labels": [
+        "Label.declaration.transportEquipmentQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.transportEquipmentQuantity",
+      "format": "n..6",
+      "validations": {
+        "digits-integer": "6",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,6}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "masterAgentCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.masterAgentCode"
+      ],
+      "tooltip": "Tooltip.declaration.masterAgentCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "carrierCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.carrierCode"
+      ],
+      "refTypeCode":"ics-carrier-names",
+      "tooltip": "Tooltip.declaration.carrierCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "submissionOffice": {
+      "uid": "03225",
+      "labels": [
+        "Label.manifest.submissionOffice"
+      ],
+      "tooltip": "Tooltip.declaration.submissionOffice",
+      "format": "an..17",
+      "refTypeCode": "ics-customs-office",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": true,
+      "type": "String"
+    },
+    "portOfLoadingCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.portOfLoadingCode"
+      ],
+      "tooltip": "Tooltip.declaration.portOfLoadingCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "submitterCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.submitterCode"
+      ],
+      "tooltip": "Tooltip.declaration.submitterCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": true,
+      "type": "String"
+    },
+    "arrivalDateTime": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.arrivalDateTime"
+      ],
+      "tooltip": "Tooltip.declaration.arrivalDateTime",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "portOfDischargeCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.portOfDischargeCode"
+      ],
+      "tooltip": "Tooltip.declaration.portOfDischargeCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    }
+  },
+  "parties": {
+    "identifier": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.party.identifier"
+      ],
+      "tooltip": "Tooltip.party.identifier",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "roleCode": {
+      "uid": "03035",
+      "labels": [
+        "Label.declaration.party.roleCode"
+      ],
+      "tooltip": "Tooltip.party.roleCode",
+      "format": "an..3",
+      "refTypeCode": "tred3035",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "manifest_routingInfoes": {
+    "purpose": {
+      "uid": "03227",
+      "labels": [
+        "Label.declaration.routingInfo.all.purpose",
+        "Label.declaration.routingInfo.air.purpose"
+      ],
+      "tooltip": "Tooltip.routingInfo.purpose",
+      "format": "an..3",
+      "refTypeCode": "tred8025",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "portActivityDateTime": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.routingInfo.portActivityDateTime"
+      ],
+      "tooltip": "Tooltip.routingInfo.portActivityDateTime",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "countryCode": {
+      "uid": "03263",
+      "labels": [
+        "Label.declaration.routingInfo.countryCode",
+        "Label.declaration.transportDocumentInfo.routingInfo.countryCode"
+      ],
+      "tooltip": "Tooltip.routingInfo.countryCode",
+      "format": "a2",
+      "refTypeCode": "tred3207",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "2",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z]{2}$"
+      },
+      "tabs": "ShippingDetails,TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "portCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.routingInfo.all.portCode",
+        "Label.declaration.routingInfo.air.portCode"
+      ],
+      "tooltip": "Tooltip.routingInfo.portCode",
+      "refTypeCode": "umscodes3225",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails,TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "callPurpose": {
+      "uid": "03227",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.routingInfo.all.callPurpose",
+        "Label.declaration.transportDocumentInfo.routingInfo.air.callPurpose"
+      ],
+      "tooltip": "Tooltip.routingInfo.callPurpose",
+      "format": "an..3",
+      "refTypeCode": "tred3227",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "dateVistied": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.routingInfo.dateVistied"
+      ],
+      "tooltip": "Tooltip.routingInfo.dateVistied",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    }
+  },
+  "transportDocumentInfoes": {
+    "actionCode": {
+      "uid": "01229",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.actionCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.actionCode",
+      "format": "an..3",
+      "refTypeCode": "tred1229",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "goodsStatusCode": {
+      "uid": "04405",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsStatusCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.goodsStatusCode",
+      "format": "an..3",
+      "refTypeCode": "tred4405",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "previousDocumentNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.previousDocumentNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.previousDocumentNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "referenceDocumentType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.referenceDocumentType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.referenceDocumentType",
+      "format": "an..3",
+      "refTypeCode": "treddoctype",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "regimeType": {
+      "uid": "04441",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.regimeType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.regimeType",
+      "format": "an..17",
+      "refTypeCode": "tred8323",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "goodsDescription": {
+      "uid": "04440",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsDescription"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.goodsDescription",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "cargoType": {
+      "uid": "07085",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.cargoType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.cargoType",
+      "format": "an..3",
+      "refTypeCode": "tred7085",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "isDangerousGoods": {
+      "uid": "07184",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.isDangerousGoods"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.isDangerousGoods",
+      "format": "n1",
+      "validations": {
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "loadingPortCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.loadingPortCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.loadingPortCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "destinationPortCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.destinationPortCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.destinationPortCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "officeOfExit": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.officeOfExit"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.officeOfExit",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "transitVoyageNumber": {
+      "uid": "08213",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.transitVoyageNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.transitVoyageNumber",
+      "format": "an..25",
+      "validations": {
+        "size-min": "0",
+        "size-max": "25",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,25}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "transitModeOfTransport": {
+      "uid": "08067",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.transitModeOfTransport"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.transitModeOfTransport",
+      "format": "n1",
+      "refTypeCode": "tred8067",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "functionCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.functionCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.functionCode",
+      "format": "n..2",
+      "refTypeCode": "tred1225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "billOfLadingNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.all.billOfLadingNumber",
+        "Label.declaration.transportDocumentInfo.air.billOfLadingNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.billOfLadingNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "splitIndicator": {
+      "uid": "09606",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.splitIndicator"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.splitIndicator",
+      "format": "n1",
+      "validations": {
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "statusCode": {
+      "uid": "01373",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.statusCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.statusCode",
+      "format": "an..3",
+      "refTypeCode": "tred1373",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "documentType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.documentType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.documentType",
+      "format": "an..3",
+      "refTypeCode": "treddoctype",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "freightForwarder": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.freightForwarder"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.freightForwarder",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "consolidatorRoleCode": {
+      "uid": "03035",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.consolidatorRoleCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.consolidatorRoleCode",
+      "format": "an..3",
+      "refTypeCode": "tred3035",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "ucrNumber": {
+      "uid": "01097",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.ucrNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.ucrNumber",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "traderReference": {
+      "uid": "01097",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.traderReference"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.traderReference",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "dischargePortCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.dischargePortCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.dischargePortCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    }
+  },
+  "partyInfoes": {
+    "consigneeCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.partyInfo.consigneeCode"
+      ],
+      "tooltip": "Tooltip.partyInfo.consigneeCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "shipperCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.partyInfo.shipperCode"
+      ],
+      "tooltip": "Tooltip.partyInfo.shipperCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "deliveryPartyCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.partyInfo.deliveryPartyCode"
+      ],
+      "tooltip": "Tooltip.partyInfo.deliveryPartyCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "notifyParty1Code": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.partyInfo.notifyParty1Code"
+      ],
+      "tooltip": "Tooltip.partyInfo.notifyParty1Code",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    }
+ },
+  "goodsInfoes": {
+    "sequenceNumber": {
+      "uid": "01050",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.sequenceNumber"
+      ],
+      "tooltip": "Tooltip.goodsInfo.sequenceNumber",
+      "format": "n..5",
+      "validations": {
+        "digits-integer": "5",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,5}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "goodsDescription": {
+      "uid": "07002",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.goodsDescription"
+      ],
+      "tooltip": "Tooltip.goodsInfo.goodsDescription",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "hsCode": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.hsCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.hsCode",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$",
+        "systems": "HSCode"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "commodityClassification": {
+      "uid": "07143",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.commodityClassification"
+      ],
+      "tooltip": "Tooltip.goodsInfo.commodityClassification",
+      "format": "an..3",
+      "refTypeCode": "tred7143",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "undgCode": {
+      "uid": "07357",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.undgCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.undgCode",
+      "format": "an..18",
+      "refTypeCode": "ums_undg",
+      "parentRefType": "",
+      "validations": {
+        "size-min": "0",
+        "size-max": "18",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,18}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "temperatureCategoryCode": {
+      "uid": "06155",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.temperatureCategoryCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.temperatureCategoryCode",
+      "format": "an..17",
+      "refTypeCode": "tred6155",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "totalGrossWeight": {
+      "uid": "06018",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.totalGrossWeight"
+      ],
+      "tooltip": "Tooltip.goodsInfo.totalGrossWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "totalNetWeight": {
+      "uid": "06048",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.totalNetWeight"
+      ],
+      "tooltip": "Tooltip.goodsInfo.totalNetWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "volume": {
+      "uid": "06314",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.volume"
+      ],
+      "tooltip": "Tooltip.goodsInfo.volume",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "countryOfOriginCode": {
+      "uid": "03207",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.countryOfOriginCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.countryOfOriginCode",
+      "format": "a2",
+      "refTypeCode": "tred3207",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "2",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z]{2}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "shippingMarks": {
+      "uid": "07102",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.shippingMarks"
+      ],
+      "tooltip": "Tooltip.goodsInfo.shippingMarks",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "numberOfPackages": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.numberOfPackages"
+      ],
+      "tooltip": "Tooltip.goodsInfo.numberOfPackages",
+      "format": "n..8",
+      "validations": {
+        "digits-integer": "8",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,8}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "packagesType": {
+      "uid": "07065",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.packagesType"
+      ],
+      "tooltip": "Tooltip.goodsInfo.packagesType",
+      "format": "an..2",
+      "refTypeCode": "tred7065",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,2}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "maximumTemperature": {
+      "uid": "06152",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.maximumTemperature"
+      ],
+      "tooltip": "Tooltip.goodsInfo.maximumTemperature",
+      "format": "n..15",
+      "validations": {
+        "digits-integer": "15",
+        "digits-fraction": "0",
+        "pattern": "^(-)?\\d{0,15}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "minimumTemperature": {
+      "uid": "06162",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.minimumTemperature"
+      ],
+      "tooltip": "Tooltip.goodsInfo.minimumTemperature",
+      "format": "n..15",
+      "validations": {
+        "digits-integer": "15",
+        "digits-fraction": "0",
+        "pattern": "^(-)?\\d{0,15}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "transportDocumentNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.transportDocumentNumber"
+      ],
+      "tooltip": "Tooltip.goodsInfo.transportDocumentNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "vehicleInfoes": {
+    "make": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.make"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.make",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "type": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.type"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.type",
+      "format": "an..256",
+      "refTypeCode": "vehtype",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "chassisNumber": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.chassisNumber"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.chassisNumber",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "model": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.model"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.model",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "color": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.color"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.color",
+      "format": "an..256",
+      "refTypeCode": "vehcolor",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "engineNumber": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.engineNumber"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.engineNumber",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "engineCapacity": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.engineCapacity"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.engineCapacity",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "yearBuilt": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.yearBuilt"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.yearBuilt",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "condition": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.condition"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.condition",
+      "format": "an..256",
+      "refTypeCode": "vehcondition",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "fuelType": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.fuelType"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.fuelType",
+      "format": "an..256",
+      "refTypeCode": "vehfuel",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "containerInfoes": {
+    "containerType": {
+      "uid": "08155",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.all.containerType",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.containerType"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerType",
+      "format": "an..4",
+      "refTypeCode": "ums-all-contr-types",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "4",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,4}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "loadStatus": {
+      "uid": "08169",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.all.loadStatus",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.loadStatus"
+      ],
+      "tooltip": "Tooltip.containerInfo.loadStatus",
+      "format": "an..3",
+      "refTypeCode": "tred8169",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "containerNumber": {
+      "uid": "08260",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.all.containerNumber",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.containerNumber"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerNumber",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "numberOfSeals": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.numberOfSeals"
+      ],
+      "tooltip": "Tooltip.containerInfo.numberOfSeals",
+      "format": "n..4",
+      "validations": {
+        "digits-integer": "4",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,4}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "containerStatus": {
+      "uid": "08249",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.all.containerStatus",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.containerStatus"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerStatus",
+      "format": "an..3",
+      "refTypeCode": "tred8249",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "stowPosition": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.stowPosition"
+      ],
+      "tooltip": "Tooltip.containerInfo.stowPosition",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "tareWeight": {
+      "uid": "06156",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.tareWeight"
+      ],
+      "tooltip": "Tooltip.containerInfo.tareWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "longRoutedContainer": {
+      "uid": "08260",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.all.longRoute"
+      ],
+      "tooltip": "Tooltip.containerInfo.longRoute",
+      "format": "n1",
+      "validations": {
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    }
+    },
+    "sealInfoes": {
+    "sealNumber": {
+      "uid": "09308",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.sealInfo.sealNumber"
+      ],
+      "tooltip": "Tooltip.sealInfo.sealNumber",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "sealType": {
+      "uid": "04525",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.sealInfo.sealType"
+      ],
+      "tooltip": "Tooltip.sealInfo.sealType",
+      "format": "an..3",
+      "refTypeCode": "umscodes4525",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "response": {
+    "functionCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.response.functionCode"
+      ],
+      "tooltip": "Tooltip.response.functionCode",
+      "format": "n..2",
+      "refTypeCode": "tred1225",
+      "parentRefType": "",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "identifier": {
+      "uid": "01004",
+      "labels": [
+        "Label.response.identifier"
+      ],
+      "tooltip": "Tooltip.response.identifier",
+      "format": "an..70",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "replyTypeCode": {
+      "uid": "04343",
+      "labels": [
+        "Label.response.replyTypeCode"
+      ],
+      "tooltip": "Tooltip.response.replyTypeCode",
+      "format": "an..3",
+      "refTypeCode": "tred4343,umscodes4343",
+      "parentRefType": "",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "typeCode": {
+      "uid": "01001",
+      "labels": [
+        "Label.response.typeCode"
+      ],
+      "tooltip": "Tooltip.response.typeCode",
+      "format": "an..3",
+      "refTypeCode": "tred1001,umscodes1001",
+      "parentRefType": "",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  }
+}

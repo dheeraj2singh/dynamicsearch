@@ -1,0 +1,367 @@
+{
+ 
+  "acceptanceDateTime": "2019-08-19T10:50:24.129Z",
+  "additionalInformations": [
+    {
+      "content": "additCond",
+      "sequenceNumeric": 0,
+      "statementCode": "string",
+      "statementDescription": "string"
+    }
+  ],
+  "agents": [
+    {
+      "identifier": "string",
+      "name": "string",
+      "roleCode": "st"
+    }
+  ],
+  "amendments": [
+    {
+      "changeReasonCode": "str"
+    }
+  ],
+  "borderTransportMeanses": [
+    {
+      "ballastOrCargoTypeCode": "str",
+      "callPurposes": [
+        {
+          "descriptionCode": "str",
+          "sequenceNumeric": 0
+        }
+      ],
+      "itineraries": [
+        {
+          "routingCountryCode": "st",
+          "routingRegionID": "string"
+        }
+      ],
+      "journeyID": "string",
+      "masters": [
+        {
+          "identifier": "string",
+          "name": "string"
+        }
+      ],
+      "modeCode": 0,
+      "name": "string",
+      "portActivityDateTime": "2019-08-19T10:50:24.129Z",
+      "registrationNationalityCode": "st",
+      "transportEquipmentQuantity": 0,
+      "transportEquipments": [
+        {
+          "carriedTransportEquipments": [
+            {
+              "identifier": "string",
+              "sequenceNumeric": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cancellationDateTime": "2019-08-19T10:50:24.129Z",
+  "carriers": [
+    {
+      "identifier": "string",
+      "name": "string"
+    }
+  ],
+  
+  "consignments": [
+    {
+      "actionCode": "string",
+      "additionalDocuments": [
+        {
+          "identifier": "st",
+          "typeCode": "st"
+        }
+      ],
+      "associatedTransportDocuments": [
+        {
+          "identifier": "string"
+        }
+      ],
+      "borderTransportMeanses": [
+        {
+          "dpgListIndicator": 0
+        }
+      ],
+      "consignees": [
+        {
+          "addresses": [
+            {
+              "cityName": "string",
+              "countryName": "string",
+              "line": "string",
+              "postcodeID": "string"
+            }
+          ],
+          "identifier": "string",
+          "name": "string"
+        }
+      ],
+      
+      "consignmentItems": [
+        {
+          "actionCode": "string",
+          "commodities": [
+            {
+              "classifications": [
+                {
+                  "bindingTariffReferenceID": "string",
+                  "identificationTypeCode":"EN",
+                  "identifier":"string"
+                }
+              ],
+              "description": "string",
+              "productCharacteristicses": [
+                {
+                  "description": "string",
+                  "qualifierCode": "str",
+                  "sequenceNumeric": 0,
+                  "typeCode": "st"
+                }
+              ],
+              "temperatures": [
+                {
+                  "categoryCode": "string"
+                }
+              ]
+            }
+          ],
+          "destinations": [
+            {
+              "countryCode": "91",
+              "identifier":"string"
+            }
+          ],
+          "goodsMeasures": [
+            {
+              "grossMassMeasure": 0,
+              "netNetWeightMeasure": 0,
+              "netVolumeMeasure": 0
+            }
+          ],
+          "goodsStatusCode": "str",
+          "origins": [
+            {
+              "countryCode": "st"
+            }
+          ],
+          "packagings": [
+            {
+              "typeCode": "st",
+              "marksNumbersID":"01"
+            }
+          ],
+          "sequenceNumeric": 0,
+          "temperatures": [
+            {
+              "maximumStorageRequirementMeasure": 0,
+              "minimumStorageRequirementMeasure": 0
+            }
+          ],
+          "transportEquipments": [
+            {
+              "transportedCommodity": {
+                "cargoDescription": "string"
+              }
+            }
+          ]
+        }
+      ],
+      "consignors": [
+        {
+          "addresses": [
+            {
+              "cityName": "string",
+              "countryName": "string",
+              "line": "string"
+            }
+          ],
+          "name": "string",
+          "identifier": "test"
+        }
+      ],
+      "deliveryDestinations": [
+        {
+          "addresses": [
+            {
+              "cityName": "string",
+              "countryName": "string",
+              "line": "string"
+            }
+          ],
+          "name": "string",
+          "identifier": "test"
+        }
+      ],
+      "itineraries": [
+        {
+          "functionCode": "str",
+          "portActivityDateTime": "2019-08-19T10:50:24.129Z",
+          "routingCountryCode": "st",
+          "sequenceNumeric": 0,
+          "routingRegionID":1
+        }
+      ],
+      "loadingLocations": [
+        {
+          "name": "string"
+        }
+      ],
+      "notifyParties": [
+        {
+          "addresses": [
+            {
+              "cityName": "string",
+              "countryName": "string",
+              "line": "string"
+            }
+          ],
+          "name": "string",
+          "identifier": "test"
+        }
+      ],
+      "totalGrossMassMeasure": 0,
+      "totalPackageQuantity": 0,
+      "transitTransportMeanses": [
+        {
+          "modeCode": 0,
+          "identifier":"768"
+        }
+      ],
+      "transportContractDocuments": [
+        {
+          "acceptanceDateTime": "2019-08-19T11:00:13.715Z",
+          "cancellationDateTime": "2019-08-19T11:00:13.715Z",
+          "consolidators": [
+            {
+              
+              "identifier": "string",
+              "name": "string",
+              "roleCode": "st"
+            }
+          ],
+          "effectiveDateTime": "2019-08-19T11:00:13.715Z",
+          "functionCode": 0,
+          "identifier": "string",
+          "rejectionDateTime": "2019-08-19T11:00:13.715Z",
+          "splitIndicator": 0,
+          "statusCode": "str",
+          "typeCode": "st",
+          "versionID": "string"
+        }
+      ],
+      "transportEquipments": [
+        {
+          "characteristicCode": "str",
+          "fullnessCode": "str",
+          "seals": [
+            {
+              "typeCode": "st",
+              "identifier": "1213"
+            }
+          ],
+          "sealsAffixedQuantity": 0,
+          "statuses": [
+            {
+              "eventStatusCode": "str"
+            }
+          ],
+          "stowPositions": [
+            {
+              "identifier":"test1"
+            }
+          ],
+          "transportEquipmentMeasures": [
+            {
+              "tareWeightMeasure": 0
+            }
+          ]
+        }
+      ],
+      "ucRs": [
+        {
+          "traderAssignedReferenceID": "string"
+        }
+      ],
+      "unloadingLocations": [
+        {
+          "name": "string"
+        }
+      ]
+    }
+  ],
+  "effectiveDateTime": "2019-08-19T10:50:24.129Z",
+  "entryOffices": [
+    {
+      "identifier":"Test1"
+    }
+  ],
+  "functionCode": 0,
+  "goodsShipments": [
+    {
+      "consignments": [
+        {
+          "containerOperators": [
+            {
+              
+              "identifier": "string"
+            }
+          ]
+        }
+      ],
+      "exitOffices": [
+        {
+          
+          "identifier": "string"
+        }
+      ]
+    }
+  ],
+  "languageCode": "str",
+  "loadingLocations": [
+    {
+      "departureDateTime": "2019-08-19T10:50:24.129Z",
+      "name": "string",
+      "identifier":"string"
+    }
+  ],
+  "obligationGuarantees": [
+    {
+      "transitOperations": [
+        {
+          "operationTerminations": [
+            {
+              "packageQuantityQuantity": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rejectionDateTime": "2019-08-19T10:50:24.129Z",
+  "sealsAffixedQuantity": 0,
+  "specificCircumstancesCode": "string",
+  "statusCode": "string",
+  "submitters": [
+    {
+      "name": "string",
+      "identifier":"753"
+    }
+  ],
+  "totalGrossMassMeasure": 0,
+  "totalPackageQuantity": 0,
+  "transportMovementCode": "str",
+  "typeCode": "st",
+  "unloadingLocations": [
+    {
+      "arrivalDateTime": "2019-08-19T10:50:24.129Z",
+      "name": "string",
+      "identifier":"string"
+    }
+  ],
+  "versionID": "string"
+}

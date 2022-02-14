@@ -1,0 +1,688 @@
+{
+  "profileType": [{
+      "id": 1,
+      "code": "",
+      "label": "Normal",
+      "description": "Can be accessible to Intelligence, Supervisor and Manager users "
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Urgent",
+      "description": "Can be accessible to Intelligence, Supervisor and Manager users "
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Secret",
+      "description": "Can be accessible to only OGA users "
+    }
+  ],
+  "profileCategory": [{
+      "id": 1,
+      "code": "",
+      "label": "Manifest",
+      "description": " "
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Declaration",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Licenses",
+      "description": " "
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "Permits",
+      "description": " "
+    },
+    {
+      "id": 5,
+      "code": "",
+      "label": "Certificates",
+      "description": " "
+    }
+  ],
+  "ProfileRiskArea": [{
+      "id": 1,
+      "code": "",
+      "label": "Fraud",
+      "description": " "
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Smuggling",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Revenue Leakage",
+      "description": " "
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "Narcotics",
+      "description": " "
+    },
+    {
+      "id": 5,
+      "code": "",
+      "label": "Weapons & Ammunition",
+      "description": " "
+    },
+    {
+      "id": 6,
+      "code": "",
+      "label": "Terrorism",
+      "description": " "
+    },
+    {
+      "id": 7,
+      "code": "",
+      "label": "Cultural Artefacts",
+      "description": " "
+    },
+    {
+      "id": 8,
+      "code": "",
+      "label": "Endangered Species",
+      "description": " "
+    },
+    {
+      "id": 9,
+      "code": "",
+      "label": "Environmentally hazardous",
+      "description": " "
+    },
+    {
+      "id": 10,
+      "code": "",
+      "label": "IPR",
+      "description": " "
+    },
+    {
+      "id": 11,
+      "code": "",
+      "label": "Money Laundering",
+      "description": " "
+    },
+    {
+      "id": 12,
+      "code": "",
+      "label": "Valuation ",
+      "description": " "
+    },
+    {
+      "id": 13,
+      "code": "",
+      "label": "Prohibited Goods ",
+      "description": " "
+    }
+  ],
+  "profileLikelihood": [{
+      "id": 1,
+      "code": "",
+      "label": "High (Probable)",
+      "description": " Likely to occur or more than a 20% chance of occurring"
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Medium (Possible)",
+      "description": "Could occur, but less than 20% chance of occurring"
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Low (Remote)",
+      "description": "Not likely to occur and less than 5% chance of occurring "
+    }
+  ],
+  "profileConsequences": [{
+      "id": 1,
+      "code": "",
+      "label": "High (Serious)",
+      "description": " If adverse risk occurs then there could be a severe community, economic or political crisis"
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Medium (Manageable)",
+      "description": "An adverse risk occurring would obstruct workflows and harm community or business"
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Low (Treatment within existing workflows)",
+      "description": "An adverse risk would cause minor delays to service delivery "
+    }
+  ],
+  "profileSignificance": [{
+      "id": 1,
+      "code": "",
+      "label": "High (Unacceptable)",
+      "description": " Extensive Management required"
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Medium (Major)",
+      "description": "Manage and monitor risks"
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Low (Tolerable)",
+      "description": "Accept but monitor risks"
+    }
+  ],
+  "profileMethod": [{
+      "id": 1,
+      "code": "",
+      "label": "Inductive",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Deductive",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Predictive",
+      "description": ""
+    }
+  ],
+  "profileOwner": [{
+      "id": 1,
+      "code": "",
+      "label": "Inspection Department",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Valuation Department",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Smuggling Department ",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "IPR Department",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "code": "",
+      "label": "Fraud Control Department",
+      "description": ""
+    }
+  ],
+  "profileStatus": [{
+      "id": 1,
+      "code": "",
+      "label": "New",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "In Progress",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Submitted to Supervisor",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "Review by Manager",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "code": "",
+      "label": "In Testing",
+      "description": ""
+    },
+    {
+      "id": 6,
+      "code": "",
+      "label": "Approved",
+      "description": ""
+    },
+    {
+      "id": 7,
+      "code": "",
+      "label": "Active",
+      "description": ""
+    },
+    {
+      "id": 8,
+      "code": "",
+      "label": "Inactive",
+      "description": ""
+    },
+    {
+      "id": 9,
+      "code": "",
+      "label": "Pending for Information",
+      "description": ""
+    },
+    {
+      "id": 10,
+      "code": "",
+      "label": "Rejected",
+      "description": ""
+    }
+  ],
+  "profileTreatmentType": [{
+      "id": 1,
+      "code": "",
+      "label": "Tolerate",
+      "description": "",
+      "department":[]
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Treat",
+      "description": "",
+      "department": [{
+          "id": 1,
+          "name": "Inspection Department",
+          "treatment": [{
+              "id": 1,
+              "name": "Documents Inspection",
+              "action":[
+                    {"id":0,"name":"Please verify 'Bill of Lading'"},
+                    {"id":1,"name":"Please verify 'Commercial Invoice''"},
+                    {"id":2,"name":"Please verify 'Certificate of Origin'"},
+                    {"id":3,"name":"Please verify Transport Company documents"}
+                    ]
+            },
+            {
+              "id": 2,
+              "name": "Physical Inspection ",
+              "action":[
+                    {"id":0,"name":"Please verify the Product Details : Brand and Model"},
+                    {"id":1,"name":"Please verify the Gross Weight and Net Weight"},
+                    {"id":2,"name":"Please verify the Container Seals"},
+                    {"id":3,"name":"Please perform a detailed Physical Inspection"}
+                   
+                  ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Valuation Departement",
+          "treatment": [{
+              "id": 1,
+              "name": "Perform Valuation of the Products",
+              "action":[
+                    {"id":0,"name":"Please verify 'Commercial Invoice'"},
+                    {"id":1,"name":"Please verify the Price to check undervaluation"},
+                    {"id":2,"name":"Please do a physical verification of the Product and the packaging"}
+                                   
+                  ]
+            }
+
+          ]
+        },
+        {
+          "id": 1,
+          "name": "IPR Department"
+        },
+        {
+          "id": 1,
+          "name": "Fraud Control Department"
+        },
+        {
+          "id": 1,
+          "name": "Audit Department"
+        },
+        {
+          "id": 1,
+          "name": "Post Clearance Audit Department"
+        },
+        {
+          "id": 1,
+          "name": "Ministry of Agriculture"
+        },
+        {
+          "id": 1,
+          "name": "Ministry of Health"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Transfer",
+      "description": "",
+      "department":[]
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Terminate",
+      "description": "",
+      "department":[]
+    }
+  ],
+  "profileRecommendedTreatment": [{
+      "id": 1,
+      "code": "",
+      "label": "TolTransfer to Dept of Public Health",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Transfer to Dept of  Agriculture",
+      "description": ""
+    }
+  ],
+  "profileRecommendedAction": [{
+      "id": 1,
+      "code": "",
+      "label": "Documents Inspection",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Physical Inspection",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Other Departments Inspection",
+      "description": ""
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "Other",
+      "description": ""
+    }
+  ],
+  "profileReasonRejection": [{
+      "id": 1,
+      "code": "",
+      "label": "Wrong Data",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Invalid Data",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Other",
+      "description": ""
+    }
+  ],
+  "profileReasonAmendment": [{
+      "id": 1,
+      "code": "",
+      "label": "Insufficient Information",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Data is not Correct",
+      "description": ""
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Other",
+      "description": ""
+    }
+  ],
+  "profileTargetFieldGroups": [{
+      "id": 1,
+      "code": "",
+      "label": "Declaration",
+      "description": "",
+      "feilds": [{
+          "id": 0,
+          "name": "Regime"
+        },
+        {
+          "id": 1,
+          "name": "Procedure code"
+        },
+        {
+          "id": 2,
+          "name": "Mode of transport"
+        },
+        {
+          "id": 3,
+          "name": " Trader reference "
+        },
+        {
+          "id": 4,
+          "name": "Office of exit "
+        },
+        {
+          "id": 5,
+          "name": " Office of declaration"
+        },
+        {
+          "id": 6,
+          "name": "Duty/tax payment method"
+        },
+        {
+          "id": 7,
+          "name": "Security, type"
+        },
+        {
+          "id": 8,
+          "name": " Security, identifier"
+        },
+        {
+          "id": 9,
+          "name": "Submitter code"
+        },
+        {
+          "id": 10,
+          "name": " Submitter name"
+        },
+        {
+          "id": 11,
+          "name": " Self-declared"
+        },
+        {
+          "id": 12,
+          "name": "Agent "
+        },
+        {
+          "id": 13,
+          "name": " Agent name"
+        },
+        {
+          "id": 14,
+          "name": " Communication, type "
+        },
+        {
+          "id": 15,
+          "name": "Communication reference "
+        },
+        {
+          "id": 16,
+          "name": "Exporter code "
+        },
+        {
+          "id": 17,
+          "name": "Exporter name"
+        },
+        {
+          "id": 18,
+          "name": "Communication type "
+        },
+        {
+          "id": 19,
+          "name": "Communication, reference"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Shipment ",
+      "description": "",
+      "feilds": [{
+          "id": 0,
+          "name": "Nature of transaction "
+        },
+        {
+          "id": 1,
+          "name": "Total invoice amount (in foreign currency) "
+        },
+        {
+          "id": 2,
+          "name": "Currency "
+        },
+        {
+          "id": 3,
+          "name": " INCOTERMS  "
+        },
+        {
+          "id": 4,
+          "name": "INCOTERMs name of place "
+        },
+        {
+          "id": 5,
+          "name": " Consignee code "
+        },
+        {
+          "id": 6,
+          "name": "Consignee name"
+        },
+        {
+          "id": 7,
+          "name": "Consignee country"
+        },
+        {
+          "id": 8,
+          "name": " Total gross weight (kg) "
+        },
+        {
+          "id": 9,
+          "name": "Total net weight (kg) "
+        },
+        {
+          "id": 10,
+          "name": " Total freight costs "
+        },
+        {
+          "id": 11,
+          "name": " Qualifier for freight charges"
+        },
+        {
+          "id": 12,
+          "name": "Packages type and number "
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "code": "",
+      "label": "Documents",
+      "description": "",
+      "feilds": [{
+          "id": 0,
+          "name": "Completion of temporary declaration "
+        },
+        {
+          "id": 1,
+          "name": "Previous document, reference"
+        },
+        {
+          "id": 2,
+          "name": "Date of previous document"
+        },
+        {
+          "id": 3,
+          "name": " Upload documents "
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "code": "",
+      "label": "Shipping",
+      "description": "",
+      "feilds": [{
+          "id": 0,
+          "name": "Place of first discharge"
+        },
+        {
+          "id": 1,
+          "name": "Means of transport at departure, type"
+        },
+        {
+          "id": 2,
+          "name": "Means of transport at departure, nationality "
+        },
+        {
+          "id": 3,
+          "name": "Means of transport at departure, identification "
+        },
+        {
+          "id": 4,
+          "name": "Location of goods"
+        },
+        {
+          "id": 5,
+          "name": "Container, status"
+        },
+        {
+          "id": 6,
+          "name": "Container, identifier"
+        },
+        {
+          "id": 7,
+          "name": "Seal, identifier"
+        },
+        {
+          "id": 8,
+          "name": "Total number of containers"
+        },
+        {
+          "id": 9,
+          "name": "Total number of seals"
+        }
+      ]
+    }
+    
+  ]
+}

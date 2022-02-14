@@ -1,0 +1,11 @@
+{
+  "dashboard":{
+	"list":[ 
+         {
+           "id":"1",
+           "name" : "Customer dashboard" , 
+           "filters":["customerId","originId"]
+        }],
+	"metabseKey":""
+  }
+}  

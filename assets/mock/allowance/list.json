@@ -1,0 +1,12 @@
+[
+    {
+        "type": "Food",
+        "sub_type": "Provided",
+        "allowance": "1000"
+    },
+    {
+        "type": "Food1",
+        "sub_type": "Provided",
+        "allowance": "2000"
+    }
+]    

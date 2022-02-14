@@ -1,0 +1,486 @@
+[
+  {
+    "label": "Predictive Analysis",
+    "link": "/app/ai-engine",
+    "icon": "ai-eng-outline",
+    "selected": false,
+    "operationName": "aiengine",
+    "hide": false,
+    "children": [
+      {
+        "label": "Predictive Analysis",
+        "link": "/dashboard",
+        "icon": "dashboard",
+        "operationName": "dashboard",
+        "selected": true,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "Prediction Status",
+        "link": "/status",
+        "icon": "table",
+        "selected": false,
+        "operationName": "prediction",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "AI Engine Statistics",
+        "link": "/statistics",
+        "icon": "bar-chart",
+        "selected": false,
+        "operationName": "statistics",
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "ics-declaration.menu",
+    "link": "/app/ics-declaration",
+    "icon": "goods-declaration",
+    "selected": false,
+    "operationName": "declaration",
+    "hide": false,
+    "children": [
+      {
+        "label": "ics-declaration.menu.view-all",
+        "link": "/view-all",
+        "icon": "view-all",
+        "selected": true,
+        "operationName": "view",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.create-new",
+        "link": "/update-form/null",
+        "icon": "plus-circle",
+        "selected": false,
+        "operationName": "create",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.enquiry",
+        "link": "/enquiry",
+        "icon": "enquiry",
+        "selected": false,
+        "operationName": "enquiry",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.upload-draft",
+        "link": "/upload-draft",
+        "icon": "upload-draft",
+        "selected": false,
+        "operationName": "upload",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.tariff",
+        "link": "/tariff-form",
+        "icon": "project",
+        "selected": false,
+        "operationName": "tariff",
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "reference-data.menu",
+    "link": "/app/admin-rdm",
+    "icon": "reference",
+    "selected": false,
+    "operationName": "rdm",
+    "hide": false,
+    "children": [
+      {
+        "label": "reference-data.menu.reference-types",
+        "link": "/reference-type/list",
+        "icon": "reference-type",
+        "operationName": "referenceType",
+        "selected": true,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "reference-data.menu.reference-values",
+        "link": "/reference-values/list",
+        "icon": "reference-value",
+        "operationName": "referenceValues",
+        "selected": false,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "reference-data.menu.reference-data-table",
+        "link": "/reference-data-table",
+        "icon": "reference-value",
+        "operationName": "rdm-tree",
+        "selected": false,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "reference-data.menu.recommended-action-rdm",
+        "link": "/recommended-action-rdm",
+        "icon": "reference-value",
+        "operationName": "rec-action-rdm",
+        "selected": false,
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "intelligencemgmt.menu",
+    "link": "/app/intelligencemgmt",
+    "icon": "declaration",
+    "operationName": "intelligencemgmt",
+    "selected": false,
+    "hide": false,
+    "children": [
+      {
+        "label": "intelligencemgmt.menu.riskManagement",
+        "link": "/risk-mgmt",
+        "icon": "risk-management",
+        "operationName": "risk",
+        "selected": false,
+        "hide": false,
+        "children": [
+          {
+            "label": "intelligencemgmt.menu.riskManagement.declaration",
+            "link": "/declaration",
+            "icon": "intelligence-management-declaration",
+            "operationName": "risk",
+            "selected": true,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "Manifest",
+            "link": "/manifest",
+            "icon": "intelligence-management-declaration",
+            "operationName": "risk",
+            "selected": true,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "intelligencemgmt.menu.expressCourier",
+            "link": "/express-courier",
+            "icon": "intelligence-management-declaration",
+            "operationName": "risk",
+            "selected": true,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "intelligencemgmt.menu.expressCourierBL",
+            "link": "/bl-express-courier",
+            "icon": "intelligence-management-declaration",
+            "operationName": "risk",
+            "selected": true,
+            "hide": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "intelligencemgmt.menu.profileManagement",
+        "link": "/profile-mgmt",
+        "icon": "profile-mangement",
+        "operationName": "profile",
+        "selected": false,
+        "hide": false,
+        "children": [
+          {
+            "label": "intelligencemgmt.menu.profileManagement.createProfile",
+            "link": "/create-profile",
+            "icon": "create-profile",
+            "selected": false,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "intelligencemgmt.menu.profileManagement.searchProfile",
+            "link": "/search-profile",
+            "icon": "search-profile",
+            "selected": false,
+            "hide": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "intelligencemgmt.menu.riskRegister",
+        "link": "/risk-asesmnt",
+        "icon": "risk-assessment",
+        "operationName": "profile",
+        "selected": false,
+        "hide": false,
+        "children": [
+          {
+            "label": "intelligencemgmt.menu.riskRegister.create",
+            "link": "/risk-create",
+            "icon": "plus",
+            "selected": false,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "intelligencemgmt.menu.riskRegister.search",
+            "link": "/risk-query-search",
+            "icon": "file-search",
+            "selected": false,
+            "hide": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "sez.financial.menu",
+    "link": "/app/financials",
+    "icon": "finance",
+    "operationName": "financials",
+    "selected": false,
+    "hide": false,
+    "children": [
+      {
+        "label": "sez.financial.home",
+        "link": "/home",
+        "icon": "f_d",
+        "operationName": "home",
+        "selected": true,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "sez.financial.history",
+        "link": "/history",
+        "icon": "f_h",
+        "operationName": "history",
+        "selected": false,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "sez.financial.invoice-payment",
+        "link": "/invoice-payment",
+        "icon": "credit-card",
+        "operationName": "invoicePayment",
+        "selected": false,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "sez.menu.refund",
+        "icon": "wallet",
+        "operationName": "refund",
+        "link": "/refund",
+        "hide": false,
+        "children": [
+          {
+            "label": "sez.menu.view-refund",
+            "link": "/view-all",
+            "operationName": "refund",
+            "icon": "unordered-list",
+            "selected": false,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "sez.menu.create-refund",
+            "link": "/create-refund",
+            "operationName": "refund",
+            "icon": "file-sync",
+            "selected": false,
+            "hide": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "sez.menu.guarantee",
+        "icon": "fund",
+        "operationName": "guarantee",
+        "link": "/guarantee",
+        "hide": false,
+        "children": [
+          {
+            "label": "sez.menu.guarantee.view-all",
+            "link": "/view-all",
+            "operationName": "guarantee",
+            "icon": "unordered-list",
+            "selected": false,
+            "hide": false,
+            "children": []
+          },
+          {
+            "label": "sez.menu.guarantee.create",
+            "link": "/create",
+            "operationName": "guarantee",
+            "icon": "file-sync",
+            "selected": false,
+            "hide": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "label": "sez.financial.customer-invoices",
+        "link": "/customer-invoices",
+        "icon": "credit-card",
+        "operationName": "customerInvoices",
+        "selected": false,
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "ics-declaration.menu",
+    "link": "/app/ics-declaration",
+    "icon": "goods-declaration",
+    "selected": false,
+    "operationName": "declaration",
+    "hide": false,
+    "children": [
+      {
+        "label": "ics-declaration.menu.view-all",
+        "link": "/view-all",
+        "icon": "view-all",
+        "selected": true,
+        "operationName": "view",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.create-new",
+        "link": "/update-form/null",
+        "icon": "plus-circle",
+        "selected": false,
+        "operationName": "create",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.enquiry",
+        "link": "/enquiry",
+        "icon": "enquiry",
+        "selected": false,
+        "operationName": "enquiry",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.upload-draft",
+        "link": "/upload-draft",
+        "icon": "upload-draft",
+        "selected": false,
+        "operationName": "upload",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ics-declaration.menu.tariff",
+        "link": "/tariff-form",
+        "icon": "project",
+        "selected": false,
+        "operationName": "tariff",
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "ums-manifest.menu",
+    "link": "/app/ums-manifest",
+    "icon": "cargo-declaration",
+    "selected": false,
+    "operationName": "manifest",
+    "hide": false,
+    "children": [
+      {
+        "label": "ums-manifest.menu.view-all",
+        "link": "/view-all",
+        "icon": "view-all",
+        "selected": true,
+        "operationName": "view",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ums-manifest.menu.create-new",
+        "link": "/update-form/null",
+        "icon": "plus-circle",
+        "selected": false,
+        "operationName": "create",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ums-manifest.menu.enquiry",
+        "link": "/enquiry/null",
+        "icon": "enquiry",
+        "selected": false,
+        "operationName": "enquiry",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ums-manifest.menu.upload-draft",
+        "link": "/upload-draft",
+        "icon": "upload-draft",
+        "selected": false,
+        "operationName": "upload",
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "ums-manifest.menu.tariff",
+        "link": "/tariff-form",
+        "icon": "project",
+        "selected": false,
+        "operationName": "tariff",
+        "hide": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "worklist-management.menu",
+    "link": "/app/work-list-mgmt",
+    "operationName": "bps",
+    "icon": "worklist-management",
+    "selected": false,
+    "hide": false,
+    "children": [
+      {
+        "label": "worklist-management.menu.worklist",
+        "link": "/task/admin",
+        "operationName": "task",
+        "icon": "worklist-management",
+        "selected": false,
+        "hide": false,
+        "children": []
+      },
+      {
+        "label": "worklist-management.menu.workflow",
+        "link": "/workflow/admin",
+        "operationName": "workflow",
+        "icon": "worklist-management",
+        "selected": false,
+        "hide": false,
+        "children": []
+      }
+    ]
+  }
+]

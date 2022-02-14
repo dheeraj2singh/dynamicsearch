@@ -1,0 +1,2363 @@
+{
+  "declaration": {
+    "declarationPurposeCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.declaration.declarationPurposeCode"
+      ],
+      "tooltip": "Tooltip.declaration.declarationPurposeCode",
+      "format": "n..2",
+      "refTypeCode": "ics-decl-purpose",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "clientReferenceNumber": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.clientReferenceNumber"
+      ],
+      "tooltip": "Tooltip.declaration.clientReferenceNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "valuationStatus": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.valuationStatus"
+      ],
+      "tooltip": "Tooltip.permitInfo.documentType",
+      "format": "an..3",
+      "validations": {
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "Declaration",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "goodsItemQuantity": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.goodsItemQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.goodsItemQuantity",
+      "format": "n..5",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "declarationNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.declarationNumber"
+      ],
+      "tooltip": "Tooltip.declaration.declarationNumber",
+      "format": "an..70",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "issueDateTime": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.issueDateTime"
+      ],
+      "tooltip": "Tooltip.declaration.issueDateTime",
+      "format": "an..35",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "issueLocationID": {
+      "uid": "03411",
+      "labels": [
+        "Label.declaration.issueLocationID"
+      ],
+      "tooltip": "Tooltip.declaration.issueLocationID",
+      "format": "an..5",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "languageCode": {
+      "uid": "03453",
+      "labels": [
+        "Label.declaration.languageCode"
+      ],
+      "tooltip": "Tooltip.declaration.languageCode",
+      "format": "an..3",
+      "refTypeCode": "tred3453",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "loadingListQuantity": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.loadingListQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.loadingListQuantity",
+      "format": "n..5",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "specificCircumstancesCode": {
+      "uid": "07365",
+      "labels": [
+        "Label.declaration.specificCircumstancesCode"
+      ],
+      "tooltip": "Tooltip.declaration.specificCircumstancesCode",
+      "format": "an..3",
+      "refTypeCode": "umscodes7365",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "statusCode": {
+      "uid": "01373",
+      "labels": [
+        "Label.declaration.statusCode",
+        "Label.response.declaration.statusCode"
+      ],
+      "tooltip": "Tooltip.declaration.statusCode",
+      "format": "an..3",
+      "refTypeCode": "tred1373",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "totalPackageQuantity": {
+      "uid": "07365",
+      "labels": [
+        "Label.declaration.totalPackageQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.totalPackageQuantity",
+      "format": "n..8",
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "regimeType": {
+      "uid": "08323",
+      "labels": [
+        "Label.declaration.regimeType"
+      ],
+      "tooltip": "Tooltip.declaration.regimeType",
+      "format": "an..3",
+      "refTypeCode": "tred8323",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "declarationType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.declarationType"
+      ],
+      "tooltip": "Tooltip.declaration.declarationType",
+      "format": "an..3",
+      "refTypeCode": "regimedecltypes",
+      "parentRefType": "",
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "submitterRemarks": {
+      "uid": "04440",
+      "labels": [
+        "Label.declaration.submitterRemarks"
+      ],
+      "tooltip": "Tooltip.declaration.submitterRemarks",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "statementCode": {
+      "uid": "04441",
+      "labels": [
+        "Label.declaration.statementCode"
+      ],
+      "tooltip": "Tooltip.declaration.statementCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes4441",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "statementDescription": {
+      "uid": "04440",
+      "labels": [
+        "Label.declaration.statementDescription"
+      ],
+      "tooltip": "Tooltip.declaration.statementDescription",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "brokerCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.brokerCode"
+      ],
+      "tooltip": "Tooltip.declaration.brokerCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "changeReasonCode": {
+      "uid": "04295",
+      "labels": [
+        "Label.declaration.changeReasonCode"
+      ],
+      "tooltip": "Tooltip.declaration.changeReasonCode",
+      "format": "an..3",
+      "refTypeCode": "ics-amend-cancel-reason",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "arrivalDate": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.arrivalDate"
+      ],
+      "tooltip": "Tooltip.declaration.arrivalDate",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "departureDate": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.departureDate"
+      ],
+      "tooltip": "Tooltip.declaration.departureDate",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "voyageNumber": {
+      "uid": "08028",
+      "labels": [
+        "Label.declaration.voyageNumber",
+        "Label.declaration.air.voyageNumber"
+      ],
+      "tooltip": "Tooltip.declaration.voyageNumber",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "modeCode": {
+      "uid": "08067",
+      "labels": [
+        "Label.declaration.modeCode"
+      ],
+      "tooltip": "Tooltip.declaration.modeCode",
+      "format": "n1",
+      "refTypeCode": "tred8067",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "destinationCountry": {
+      "uid": "08453",
+      "labels": [
+        "Label.declaration.destinationCountry"
+      ],
+      "tooltip": "Tooltip.declaration.destinationCountry",
+      "format": "a2",
+      "refTypeCode": "tred8453",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "2",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z]{2}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "transportEquipmentQuantity": {
+      "uid": "08046",
+      "labels": [
+        "Label.declaration.transportEquipmentQuantity"
+      ],
+      "tooltip": "Tooltip.declaration.transportEquipmentQuantity",
+      "format": "n..6",
+      "validations": {
+        "digits-integer": "6",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,6}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "cargoHandlerCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.cargoHandlerCode"
+      ],
+      "tooltip": "Tooltip.declaration.cargoHandlerCode",
+      "format": "an..17",
+      "refTypeCode": "ums-terminal-codes",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "masterAgentCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.masterAgentCode"
+      ],
+      "tooltip": "Tooltip.declaration.masterAgentCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "carrierCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.carrierCode"
+      ],
+      "tooltip": "Tooltip.declaration.carrierCode",
+      "refTypeCode": "ics-carrier-names",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "reviewPlaceID": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.reviewPlaceID"
+      ],
+      "tooltip": "Tooltip.declaration.reviewPlaceID",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "declarantCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.declarantCode"
+      ],
+      "tooltip": "Tooltip.declaration.declarantCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "submissionOffice": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.submissionOffice"
+      ],
+      "tooltip": "Tooltip.declaration.submissionOffice",
+      "format": "an..17",
+      "refTypeCode": "ics-customs-office",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "exporterCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.exporterCode"
+      ],
+      "tooltip": "Tooltip.declaration.exporterCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "importerCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.importerCode"
+      ],
+      "tooltip": "Tooltip.declaration.importerCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "portOfLoadingCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.portOfLoadingCode"
+      ],
+      "tooltip": "Tooltip.declaration.portOfLoadingCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "submitterCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.submitterCode"
+      ],
+      "tooltip": "Tooltip.declaration.submitterCode",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$",
+        "systems": "CLM"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "portOfDischargeCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.portOfDischargeCode"
+      ],
+      "tooltip": "Tooltip.declaration.portOfDischargeCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "functionCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.response.declaration.functionCode"
+      ],
+      "tooltip": "Tooltip.declaration.functionCode",
+      "format": "n..2",
+      "refTypeCode": "tred1225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "identifier": {
+      "uid": "01004",
+      "labels": [
+        "Label.response.declaration.identifier"
+      ],
+      "tooltip": "Tooltip.declaration.identifier",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "typeCode": {
+      "uid": "01001",
+      "labels": [
+        "Label.response.declaration.typeCode"
+      ],
+      "tooltip": "Tooltip.declaration.typeCode",
+      "format": "an..3",
+      "refTypeCode": "tred1001",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "supportingDocumentInfo": {
+    "categoryCode": {
+      "uid": "01003",
+      "labels": [
+        "Label.declaration.supportingDocumentInfo.categoryCode"
+      ],
+      "tooltip": "Tooltip.supportingDocumentInfo.categoryCode",
+      "format": "an..3",
+      "refTypeCode": "ics-dec-doc-category",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "reasonCode": {
+      "uid": "01225",
+      "labels": [
+        "Label.declaration.supportingDocumentInfo.reasonCode"
+      ],
+      "tooltip": "Tooltip.supportingDocumentInfo.reasonCode",
+      "format": "n..2",
+      "refTypeCode": "ics-dec-doc-reason",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "remarks": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.supportingDocumentInfo.remarks"
+      ],
+      "tooltip": "Tooltip.supportingDocumentInfo.remarks",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "originalIndicator": {
+      "uid": "04366",
+      "labels": [
+        "Label.declaration.supportingDocumentInfo.originalIndicator"
+      ],
+      "tooltip": "Tooltip.supportingDocumentInfo.originalIndicator",
+      "format": "an1",
+      "validations": {
+        "size-min": "1",
+        "size-max": "1",
+        "pattern": "^[a-zA-Z0-9]{1}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "typeCode": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.supportingDocumentInfo.typeCode"
+      ],
+      "tooltip": "Tooltip.supportingDocumentInfo.typeCode",
+      "format": "an..3",
+      "refTypeCode": "ics-dec-doc-type",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "HeaderInfo",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "transportDocumentInfo": {
+    "cargoVolume": {
+      "uid": "06322",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.cargoVolume"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.cargoVolume",
+      "format": "an..10",
+      "validations": {
+        "size-min": "0",
+        "size-max": "10",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,10}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "totalPackages": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.totalPackages"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.totalPackages",
+      "format": "n..8",
+      "validations": {
+        "digits-integer": "8",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,8}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "cargoType": {
+      "uid": "07085",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.cargoType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.cargoType",
+      "format": "an..3",
+      "refTypeCode": "tred7085",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "marksAndNumbers": {
+      "uid": "07004",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.marksAndNumbers"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.marksAndNumbers",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "grossWeight": {
+      "uid": "06300",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.grossWeight"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.grossWeight",
+      "format": "n..14,3",
+      "validations": {
+        "digits-integer": "14",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,14}(\\.\\d{0,3})?$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "netWeight": {
+      "uid": "06302",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.netWeight"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.netWeight",
+      "format": "n..14,3",
+      "validations": {
+        "digits-integer": "14",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,14}(\\.\\d{0,3})?$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "totalContainers": {
+      "uid": "08046",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.totalContainers",
+        "Label.declaration.transportDocumentInfo.air.totalContainers"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.totalContainers",
+      "format": "n..6",
+      "validations": {
+        "digits-integer": "6",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,6}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": true,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "transitCode": {
+      "uid": "08213",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.transitCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.transitCode",
+      "format": "an..25",
+      "validations": {
+        "size-min": "0",
+        "size-max": "25",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,25}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "transitMode": {
+      "uid": "08067",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.transitMode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.transitMode",
+      "format": "n1",
+      "refTypeCode": "tred8067",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "1",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,1}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "transitName": {
+      "uid": "08212",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.transitName"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.transitName",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "billOfLadingNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.billOfLadingNumber",
+        "Label.declaration.transportDocumentInfo.air.billOfLadingNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.billOfLadingNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "documentType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.documentType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.documentType",
+      "format": "an..3",
+      "refTypeCode": "tred1001",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "ucrNumber": {
+      "uid": "01097",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.ucrNumber"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.ucrNumber",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "facilityInDate": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.facilityInDate"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.facilityInDate",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "facilityOutDate": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.facilityOutDate"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.facilityOutDate",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "facilityCode": {
+      "uid": "03225",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.facilityCode"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.facilityCode",
+      "format": "an..17",
+      "refTypeCode": "umscodes3225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "facilityType": {
+      "uid": "03227",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.facilityType"
+      ],
+      "tooltip": "Tooltip.transportDocumentInfo.facilityType",
+      "format": "an..3",
+      "refTypeCode": "tred3227",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "goodsInfo": {
+    "customsValue": {
+      "uid": "05032",
+      "labels": [
+        "Label.declaration.goodsInfo.customsValue"
+      ],
+      "tooltip": "Tooltip.goodsInfo.customsValue",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": true,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "declaredValueFc": {
+      "uid": "05004",
+      "labels": [
+        "Label.declaration.goodsInfo.declaredValueFc"
+      ],
+      "tooltip": "Tooltip.goodsInfo.declaredValueFc",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "currencyCode": {
+      "uid": "01003",
+      "labels": [
+        "Label.declaration.goodsInfo.currencyCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.currencyCode",
+      "format": "an..3",
+      "refTypeCode": "tred6345",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "goodsDescription": {
+      "uid": "07004",
+      "labels": [
+        "Label.declaration.goodsInfo.goodsDescription"
+      ],
+      "tooltip": "Tooltip.goodsInfo.goodsDescription",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "additionalDescription": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.goodsInfo.additionalDescription"
+      ],
+      "tooltip": "Tooltip.goodsInfo.additionalDescription",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "invoiceNumber": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.goodsInfo.invoiceNumber"
+      ],
+      "tooltip": "Tooltip.goodsInfo.invoiceNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "goodsCondition": {
+      "uid": "07007",
+      "labels": [
+        "Label.declaration.goodsInfo.goodsCondition"
+      ],
+      "tooltip": "Tooltip.goodsInfo.goodsCondition",
+      "format": "an..3",
+      "refTypeCode": "tred7007",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "declaredValue": {
+      "uid": "05004",
+      "labels": [
+        "Label.declaration.goodsInfo.declaredValue"
+      ],
+      "tooltip": "Tooltip.goodsInfo.declaredValue",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "hsCode": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.goodsInfo.hsCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.hsCode",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$",
+        "systems": "HSCode"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "dutyValue": {
+      "uid": "05286",
+      "labels": [
+        "Label.declaration.goodsInfo.dutyValue"
+      ],
+      "tooltip": "Tooltip.goodsInfo.dutyValue",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": true,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "exemptionType": {
+      "uid": "09213",
+      "labels": [
+        "Label.declaration.goodsInfo.exemptionType"
+      ],
+      "tooltip": "Tooltip.goodsInfo.exemptionType",
+      "format": "an..3",
+      "refTypeCode": "tred9213",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "exemptionNumber": {
+      "uid": "01154",
+      "labels": [
+        "Label.declaration.goodsInfo.exemptionNumber"
+      ],
+      "tooltip": "Tooltip.goodsInfo.exemptionNumber",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "dutyRate": {
+      "uid": "05278",
+      "labels": [
+        "Label.declaration.goodsInfo.dutyRate"
+      ],
+      "tooltip": "Tooltip.goodsInfo.dutyRate",
+      "format": "an..17,3",
+      "validations": {
+        "digits-integer": "17",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,17}(\\.\\d{0,3})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": true,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "dutyTypeCode": {
+      "uid": "05153",
+      "labels": [
+        "Label.declaration.goodsInfo.dutyTypeCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.dutyTypeCode",
+      "format": "an..3",
+      "refTypeCode": "tred5153,umscodes5153,ics-duty-type-code",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": true,
+      "mandatory": true,
+      "type": "String"
+    },
+    "grossWeight": {
+      "uid": "06018",
+      "labels": [
+        "Label.declaration.goodsInfo.grossWeight"
+      ],
+      "tooltip": "Tooltip.goodsInfo.grossWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "netWeight": {
+      "uid": "06048",
+      "labels": [
+        "Label.declaration.goodsInfo.netWeight"
+      ],
+      "tooltip": "Tooltip.goodsInfo.netWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "cargoVolume": {
+      "uid": "06314",
+      "labels": [
+        "Label.declaration.goodsInfo.cargoVolume"
+      ],
+      "tooltip": "Tooltip.goodsInfo.cargoVolume",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "productCode": {
+      "uid": "07402",
+      "labels": [
+        "Label.declaration.goodsInfo.productCode"
+      ],
+      "tooltip": "Tooltip.goodsInfo.productCode",
+      "format": "an..25",
+      "validations": {
+        "size-min": "0",
+        "size-max": "25",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,25}$",
+        "systems": "ProdcutCode"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "supplementaryQuantityUom": {
+      "uid": "06311",
+      "labels": [
+        "Label.declaration.goodsInfo.supplementaryQuantityUom"
+      ],
+      "tooltip": "Tooltip.goodsInfo.supplementaryQuantityUom",
+      "format": "an..3",
+      "refTypeCode": "tred6311",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "supplementaryQuantity": {
+      "uid": "06102",
+      "labels": [
+        "Label.declaration.goodsInfo.supplementaryQuantity"
+      ],
+      "tooltip": "Tooltip.goodsInfo.supplementaryQuantity",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "countryOfOrigin": {
+      "uid": "03207",
+      "labels": [
+        "Label.declaration.goodsInfo.countryOfOrigin"
+      ],
+      "tooltip": "Tooltip.goodsInfo.countryOfOrigin",
+      "format": "a2",
+      "refTypeCode": "tred3207",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "2",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z]{2}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "goodsQuantity": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.goodsInfo.goodsQuantity"
+      ],
+      "tooltip": "Tooltip.goodsInfo.goodsQuantity",
+      "format": "n..8",
+      "validations": {
+        "digits-integer": "8",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,8}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Integer"
+    },
+    "quantityUom": {
+      "uid": "07065",
+      "labels": [
+        "Label.declaration.goodsInfo.quantityUom"
+      ],
+      "tooltip": "Tooltip.goodsInfo.quantityUom",
+      "format": "an..2",
+      "refTypeCode": "tred7065",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "2",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,2}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "prevDeclarationNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.goodsInfo.prevDeclarationNumber"
+      ],
+      "tooltip": "Tooltip.goodsInfo.prevDeclarationNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "isCooMatched": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.goodsInfo.isCooMatched"
+      ],
+      "tooltip": "Tooltip.permitInfo.documentType",
+      "format": "an..3",
+      "validations": {
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "permitInfo": {
+    "permitNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.goodsInfo.permitInfo.permitNumber"
+      ],
+      "tooltip": "Tooltip.permitInfo.permitNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "issuerAuthority": {
+      "uid": "03036",
+      "labels": [
+        "Label.declaration.goodsInfo.permitInfo.issuerAuthority"
+      ],
+      "tooltip": "Tooltip.permitInfo.issuerAuthority",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "issuerCode": {
+      "uid": "03039",
+      "labels": [
+        "Label.declaration.goodsInfo.permitInfo.issuerCode"
+      ],
+      "tooltip": "Tooltip.permitInfo.issuerCode",
+      "format": "an..17",
+      "refTypeCode": "LPDepartcode",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "documentName": {
+      "uid": "01000",
+      "labels": [
+        "Label.declaration.goodsInfo.permitInfo.documentName"
+      ],
+      "tooltip": "Tooltip.permitInfo.documentName",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "documentType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.goodsInfo.permitInfo.documentType"
+      ],
+      "tooltip": "Tooltip.permitInfo.documentType",
+      "format": "an..3",
+      "refTypeCode": "Lpdocslist",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "vehicleInfo": {
+    "make": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.make"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.make",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "type": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.type"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.type",
+      "format": "an..256",
+      "refTypeCode": "vehtype",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "chassisNumber": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.chassisNumber"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.chassisNumber",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "model": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.model"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.model",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "color": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.color"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.color",
+      "format": "an..256",
+      "refTypeCode": "vehcolor",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "engineNumber": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.engineNumber"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.engineNumber",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "engineCapacity": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.engineCapacity"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.engineCapacity",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "yearBuilt": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.yearBuilt"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.yearBuilt",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "condition": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.condition"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.condition",
+      "format": "an..256",
+      "refTypeCode": "vehcondition",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "fuelType": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.goodsInfo.vehicleInfo.fuelType"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.fuelType",
+      "format": "an..256",
+      "refTypeCode": "vehfuel",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "TransportDocument",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "specificationStandard": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.goodsInfo.vehicleInfo.specificationStandard"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.specificationStandard",
+      "format": "an..256",
+      "refTypeCode": "ics-vehspecification",
+      "parentRefType": "",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "carriageCapacity": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.goodsInfo.vehicleInfo.carriageCapacity"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.carriageCapacity",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "passengerCapacity": {
+      "uid": "07008",
+      "labels": [
+        "Label.declaration.goodsInfo.vehicleInfo.passengerCapacity"
+      ],
+      "tooltip": "Tooltip.vehicleInfo.passengerCapacity",
+      "format": "an..256",
+      "validations": {
+        "size-min": "0",
+        "size-max": "256",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,256}$"
+      },
+      "tabs": "GoodsDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "containerInfo": {
+    "containerType": {
+      "uid": "08155",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.containerType",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.containerType"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerType",
+      "format": "an..4",
+      "refTypeCode": "umscodes8155",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "4",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,4}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "containerNumber": {
+      "uid": "08260",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.containerNumber",
+        "Label.declaration.transportDocumentInfo.containerInfo.air.containerNumber"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerNumber",
+      "format": "an..17",
+      "validations": {
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "numberOfSeals": {
+      "uid": "06061",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.numberOfSeals"
+      ],
+      "tooltip": "Tooltip.containerInfo.numberOfSeals",
+      "format": "n..4",
+      "validations": {
+        "digits-integer": "4",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,4}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "containerGrossWeight": {
+      "uid": "06018",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.containerGrossWeight"
+      ],
+      "tooltip": "Tooltip.containerInfo.containerGrossWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "tareWeight": {
+      "uid": "06156",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.tareWeight"
+      ],
+      "tooltip": "Tooltip.containerInfo.tareWeight",
+      "format": "n..16,6",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "6",
+        "pattern": "^\\d{0,16}(\\.\\d{0,6})?$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    }
+  },
+  "sealInfo": {
+    "sealNumber": {
+      "uid": "09308",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.sealInfo.sealNumber"
+      ],
+      "tooltip": "Tooltip.sealInfo.sealNumber",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "sealType": {
+      "uid": "04525",
+      "labels": [
+        "Label.declaration.transportDocumentInfo.containerInfo.sealInfo.sealType"
+      ],
+      "tooltip": "Tooltip.sealInfo.sealType",
+      "format": "an..3",
+      "refTypeCode": "umscodes4525",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "ShippingDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "paymentInfo": {
+    "paymentMethod": {
+      "uid": "04467",
+      "labels": [
+        "Label.declaration.paymentInfo.paymentMethod"
+      ],
+      "tooltip": "Tooltip.paymentInfo.paymentMethod",
+      "format": "a1",
+      "refTypeCode": "ics-payment-method",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "1",
+        "size-max": "1",
+        "pattern": "^[a-zA-Z0-9]{1}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    },
+    "paymentReferenceNumber": {
+      "uid": "01168",
+      "labels": [
+        "Label.declaration.paymentInfo.paymentReferenceNumber"
+      ],
+      "tooltip": "Tooltip.paymentInfo.paymentReferenceNumber",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,35}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": true,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "invoiceInfo": {
+    "totalCifLocalCurrency": {
+      "uid": "05004",
+      "labels": [
+        "Label.declaration.invoiceInfo.totalCifLocalCurrency"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.totalCifLocalCurrency",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "invoiceValueForiegnCurrency": {
+      "uid": "05506",
+      "labels": [
+        "Label.declaration.invoiceInfo.invoiceValueForiegnCurrency"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.invoiceValueForiegnCurrency",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "freightCost": {
+      "uid": "05290",
+      "labels": [
+        "Label.declaration.invoiceInfo.freightCost"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.freightCost",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "insuranceCost": {
+      "uid": "05486",
+      "labels": [
+        "Label.declaration.invoiceInfo.insuranceCost"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.insuranceCost",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "valuationMethod": {
+      "uid": "05509",
+      "labels": [
+        "Label.declaration.invoiceInfo.valuationMethod"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.valuationMethod",
+      "format": "an..3",
+      "refTypeCode": "umscodes5509",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "incotermCode": {
+      "uid": "04277",
+      "labels": [
+        "Label.declaration.invoiceInfo.incotermCode"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.incotermCode",
+      "format": "an..17",
+      "refTypeCode": "tred4277",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "17",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,17}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "deductions": {
+      "uid": "05004",
+      "labels": [
+        "Label.declaration.invoiceInfo.deductions"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.deductions",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "currencyCode": {
+      "uid": "06345",
+      "labels": [
+        "Label.declaration.invoiceInfo.currencyCode"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.currencyCode",
+      "format": "a3",
+      "refTypeCode": "tred6345",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "3",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z]{3}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "currencyRate": {
+      "uid": "05402",
+      "labels": [
+        "Label.declaration.invoiceInfo.currencyRate"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.currencyRate",
+      "format": "n..12,5",
+      "validations": {
+        "digits-integer": "12",
+        "digits-fraction": "5",
+        "pattern": "^\\d{0,12}(\\.\\d{0,5})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Double"
+    },
+    "totalInvoicePages": {
+      "uid": "01225",
+      "labels": [
+        "Label.declaration.invoiceInfo.totalInvoicePages"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.totalInvoicePages",
+      "format": "n..2",
+      "refTypeCode": "tred1225",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "digits-integer": "2",
+        "digits-fraction": "0",
+        "pattern": "^\\d{0,2}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Integer"
+    },
+    "invoiceNumber": {
+      "uid": "01004",
+      "labels": [
+        "Label.declaration.invoiceInfo.invoiceNumber"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.invoiceNumber",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "invoiceDate": {
+      "uid": "02380",
+      "labels": [
+        "Label.declaration.invoiceInfo.invoiceDate"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.invoiceDate",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "invoiceType": {
+      "uid": "01001",
+      "labels": [
+        "Label.declaration.invoiceInfo.invoiceType"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.invoiceType",
+      "format": "an..3",
+      "refTypeCode": "ics-invoice-types",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "3",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,3}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "otherCosts": {
+      "uid": "05004",
+      "labels": [
+        "Label.declaration.invoiceInfo.otherCosts"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.otherCosts",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    },
+    "sellerName": {
+      "uid": "03036",
+      "labels": [
+        "Label.declaration.invoiceInfo.sellerName"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.sellerName",
+      "format": "an..70",
+      "validations": {
+        "size-min": "0",
+        "size-max": "70",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,70}$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "approOfCharges": {
+      "uid": "05514",
+      "labels": [
+        "Label.declaration.invoiceInfo.approOfCharges"
+      ],
+      "tooltip": "Tooltip.invoiceInfo.approOfCharges",
+      "format": "n..16,3",
+      "validations": {
+        "digits-integer": "16",
+        "digits-fraction": "3",
+        "pattern": "^\\d{0,16}(\\.\\d{0,3})?$"
+      },
+      "tabs": "FinancialDetails",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Double"
+    }
+  },
+  "response": {
+    "identifier": {
+      "uid": "01004",
+      "labels": [
+        "Label.response.identifier"
+      ],
+      "tooltip": "Tooltip.response.identifier",
+      "format": "an..70",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "replyTypeCode": {
+      "uid": "04343",
+      "labels": [
+        "Label.response.replyTypeCode"
+      ],
+      "tooltip": "Tooltip.response.replyTypeCode",
+      "format": "an..3",
+      "refTypeCode": "tred4343,umscodes4343",
+      "parentRefType": "",
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  },
+  "error": {
+    "description": {
+      "uid": "04440",
+      "labels": [
+        "Label.response.error.description"
+      ],
+      "tooltip": "Tooltip.error.description",
+      "format": "an..512",
+      "validations": {
+        "size-min": "0",
+        "size-max": "512",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,512}$"
+      },
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    },
+    "validationCode": {
+      "uid": "09321",
+      "labels": [
+        "Label.response.error.validationCode"
+      ],
+      "tooltip": "Tooltip.error.validationCode",
+      "format": "an..8",
+      "refTypeCode": "umscodes9321",
+      "parentRefType": "",
+      "validations": {
+        "systems": "RDM",
+        "size-min": "0",
+        "size-max": "8",
+        "pattern": "^[a-zA-Z0-9._\\- ]{0,8}$"
+      },
+      "tabs": "",
+      "systemField": false,
+      "mandatory": false,
+      "type": "String"
+    }
+  }
+}

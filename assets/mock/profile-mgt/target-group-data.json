@@ -1,0 +1,930 @@
+{
+
+  "headerProfile": {
+    "profileName": {
+      "labels": [
+        "ics.intelligencemgmt.profileName"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileName",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profilePurposeCode": {
+      "labels": [
+        "ics.intelligencemgmt.profilePurposeCode"
+      ],
+      "tooltip": "ics.intelligencemgmt.profilePurposeCode",
+      "refTypeCode" :"ics-risk-rules",
+      "format": "an..250",
+      "validations": {
+        "size-min": "0",
+        "size-max": "250",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,250}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "riskCategory": {
+      "labels": [
+        "ics.intelligencemgmt.riskCategory"
+      ],
+      "tooltip": "ics.intelligencemgmt.riskCategory",
+      "format": "an..250",
+      "validations": {
+        "size-min": "0",
+        "size-max": "250",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,250}$"
+      },
+      "tabs": "HeaderProfile",
+     
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "categoryCode": {
+      "labels": [
+        "ics.intelligencemgmt.categoryCode"
+      ],
+      "tooltip": "ics.intelligencemgmt.categoryCode",
+      "format": "an..250",
+      "refTypeCode" :"ics-risk-category",
+      "validations": {
+        "size-min": "0",
+        "size-max": "250",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,250}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileCode": {
+      "labels": [
+        "ics.intelligencemgmt.profileCode"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileCode",
+      "format": "an..35",
+      "validations": {
+        "size-min": "10",
+        "size-max": "16",
+        "pattern": "^[0-9]{10,16}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileNameOther": {
+      "labels": [
+        "ics.intelligencemgmt.profileNameOther"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileNameOther",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileType": {
+      "labels": [
+        "ics.intelligencemgmt.profileType"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileType",
+      "format": "an..35",
+      "refTypeCode" :"ics-label-profile-types",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },  
+    "profileCategory": {
+      "labels": [
+        "ics.intelligencemgmt.profileCategory"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileCategory",
+      "format": "an..35",
+      "refTypeCode" :"ics-label-profile-category",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileRiskArea": {
+      "labels": [
+        "ics.intelligencemgmt.riskArea"
+      ],
+      "tooltip": "ics.intelligencemgmt.riskArea",
+      "format": "an..35",
+      "refTypeCode" :"ics-label-risk-areas",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileLiklihood": {
+      "labels": [
+        "ics.intelligencemgmt.likelihood"
+      ],
+      "tooltip": "ics.intelligencemgmt.likelihood",
+      "refTypeCode" :"ics-label-likelihood",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileConsequence": {
+      "labels": [
+        "ics.intelligencemgmt.consequence"
+      ],
+      "tooltip": "ics.intelligencemgmt.consequence",
+      "refTypeCode" :"ics-label-consequences",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileSingificance": {
+      "labels": [
+        "ics.intelligencemgmt.significance"
+      ],
+      "tooltip": "ics.intelligencemgmt.significance",
+      "refTypeCode" :"ics-label-significance",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileMethod": {
+      "labels": [
+        "ics.intelligencemgmt.method"
+      ],
+      "tooltip": "ics.intelligencemgmt.method",
+      "refTypeCode" : "ics-label-profile-method",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileOwner": {
+      "labels": [
+        "ics.intelligencemgmt.owner"
+      ],
+      "tooltip": "ics.intelligencemgmt.owner",
+      "refTypeCode" : "ics-label-owner",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "516",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,516}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "thresholdScore": {
+      "labels": [
+        "ics.intelligencemgmt.thresholdScore"
+      ],
+      "tooltip": "ics.intelligencemgmt.thresholdScore",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "totalScore": {
+      "labels": [
+        "ics.intelligencemgmt.totalScore"
+      ],
+      "tooltip": "ics.intelligencemgmt.totalScore",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profileStatus": {
+      "labels": [
+        "ics.intelligencemgmt.profileStatus"
+      ],
+      "tooltip": "ics.intelligencemgmt.profileStatus",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": false,
+      "type": "Date"
+    },
+    "submitterRemarks": {
+      "labels": [
+        "ics.intelligencemgmt.submitterRemarks"
+      ],
+      "tooltip": "ics.intelligencemgmt.submitterRemarks",
+      "format": "an..100",
+      "validations": {
+        "size-min": "0",
+        "max": "100",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,100}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "profilePurpose": {
+      "labels": [
+        "ics.intelligencemgmt.profilePurpose"
+      ],
+      "tooltip": "ics.intelligencemgmt.profilePurpose",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "100",
+        "pattern": "^[a-zA-Z0-9_\\- ]{0,100}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    },
+    "validFrom": {
+      "labels": [
+        "ics.intelligencemgmt.validFrom"
+      ],
+      "tooltip": "ics.intelligencemgmt.validFrom  ",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "validTo": {
+      "labels": [
+        "ics.intelligencemgmt.profilePurpose"
+      ],
+      "tooltip": "ics.intelligencemgmt.profilePurpose",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "reasonForRejection": {
+      "labels": [
+        "ics.intelligencemgmt.reasonForRejection"
+      ],
+      "tooltip": "ics.intelligencemgmt.reasonForRejection",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "reasonForAmendment": {
+      "labels": [
+        "ics.intelligencemgmt.reasonForAmendment"
+      ],
+      "tooltip": "ics.intelligencemgmt.reasonForAmendment",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "Date"
+    },
+    "numberOfHits": {
+      "labels": [
+        "ics.intelligencemgmt.profilePurpose"
+      ],
+      "tooltip": "ics.intelligencemgmt.profilePurpose",
+      "format": "an..35",
+      "validations": {
+        "size-min": "0",
+        "size-max": "35",
+        "pattern": "^[a-zA-Z0-9_\\-]{0,35}$"
+      },
+      "tabs": "HeaderProfile",
+      "systemField": false,
+      "mandatory": true,
+      "type": "String"
+    }
+  } ,
+  "profileTargetFieldGroups": [
+    {
+      "id": 1,
+      "code": "",
+      "label": "Declaration",
+	    "description":"Declaration",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "regimeType",
+          "description": "Regime Type",
+          "controlType": "dropdown",
+          "refTypeCode": "tred8323"
+        },
+        {
+          "id": 9,
+          "type": "string",
+          "label": "declarationType",
+          "description": "Declaration Type",
+          "controlType": "dropdown",          
+          "refTypeCode": "umscodes7365"
+        },
+        {
+          "id": 11,
+          "type": "string",
+          "label": "customsOfficeCode",
+          "description": "Customs Office Code",
+          "controlType": "dropdown",
+          "refTypeCode": "ics-customs-office"
+        },
+        {
+          "id": 13,
+          "type": "string",
+          "label": "transportMode",
+          "description": "Transport Mode",
+          "controlType": "dropdown",
+          "refTypeCode": "tred8067"
+        },
+        {
+          "id": 21,
+          "type": "string",
+          "label": "brokerCode",
+          "description": "Broker Code",
+          "controlType": "input"
+        },
+        {
+          "id": 22,
+          "type": "string",
+          "label": "brokerName",
+          "description": "Broker Name",
+          "controlType": "input"
+        },
+        {
+          "id": 23,
+          "type": "string",
+          "label": "payMethodCode",
+          "description": "Pay Method Code",
+          "controlType": "dropdown",          
+          "refTypeCode": "umscodes4467"
+        },
+        {
+          "id": 24,
+          "type": "string",
+          "label": "importerCode",
+          "description": "Importer Code",
+          "controlType": "input"
+        },
+        {
+          "id": 24,
+          "type": "string",
+          "label": "importerName",
+          "description": "Importer Name",
+          "controlType": "input"
+        },
+        {
+          "id": 25,
+          "type": "string",
+          "label": "exporterCode",
+          "description": "Exporter Code",
+          "controlType": "input"
+        },
+        {
+          "id": 25,
+          "type": "string",
+          "label": "exporterName",
+          "description": "Exporter Name",
+          "controlType": "input"
+        },
+        {
+          "id": 26,
+          "type": "Date",
+          "label": "cancellationDateTime",
+          "description": "Cancellation DateTime",
+          "controlType": "date"
+        },
+        {
+          "id": 27,
+          "type": "string",
+          "label": "effectiveDateTime",
+          "description": "Effective DateTime",
+          "controlType": "date"
+        },
+        {
+          "id": 28,
+          "type": "string",
+          "label": "expirationDateTime",
+          "description": "Expiration DateTime",
+          "controlType": "date"
+        },
+        {
+          "id": 29,
+          "type": "string",
+          "label": "ics_ref_doc_type",
+          "description": "Document Type",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_doc_type"
+        },
+        {
+          "id": 30,
+          "type": "string",
+          "label": "ics_ref_status",
+          "description": "ICS refund status",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_status"
+        },
+        {
+          "id": 31,
+          "type": "string",
+          "label": "ics_ref_reason",
+          "description": "ICS refund Reason",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_reason"
+        },
+        {
+          "id": 32,
+          "type": "string",
+          "label": "ics_ref_reviewer_status",
+          "description": "ICS refund reviewer status",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_reviewer_status"
+        },
+        {
+          "id": 33,
+          "type": "string",
+          "label": "ics_ref_dispatcher_status",
+          "description": "ICS refund dispatcher status",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_dispatcher_status"
+        },
+        {
+          "id": 34,
+          "type": "string",
+          "label": "ics_ref_bank",
+          "description": "ICS refund banks",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_bank"
+        },
+        {
+          "id": 35,
+          "type": "string",
+          "label": "ics_ref_bank_branch",
+          "description": "ICS refund bank branch",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_bank_branch"
+        },
+        {
+          "id": 36,
+          "type": "string",
+          "label": "ics_ref_bank_branch",
+          "description": "ICS refund bank branch",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_ref_paymode"
+        },
+        {
+          "id": 37,
+          "type": "string",
+          "label": "ics_gua_guaranteemode",
+          "description": "ICS guarantee modes",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteemode"
+        },
+        {
+          "id": 38,
+          "type": "string",
+          "label": "ics_gua_guaranteetype",
+          "description": "ICS guarantee type",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteetype"
+        },
+        {
+          "id": 39,
+          "type": "string",
+          "label": "ics_gua_rejectionreason",
+          "description": "ICS guarantee rejection",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_rejectionreason"
+        },
+        {
+          "id": 40,
+          "type": "string",
+          "label": "ics_gua_guaranteestatus",
+          "description": "ICS guarantee status",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteestatus"
+        },
+        {
+          "id": 41,
+          "type": "string",
+          "label": "ics_gua_guarantee_purposecode",
+          "description": "ICS guarantee purpose code",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guarantee_purposecode"
+        },
+        {
+          "id": 42,
+          "type": "string",
+          "label": "ics_gua_guaranteeprovider",
+          "description": "ICS guarantee provider",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteeprovider"
+        },
+        {
+          "id": 43,
+          "type": "string",
+          "label": "ics_gua_guaranteeprovider_bank",
+          "description": "ICS guarantee Banks",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteeprovider_bank"
+        },
+        {
+          "id": 44,
+          "type": "string",
+          "label": "ics_gua_guaranteeprovider_ministries",
+          "description": "ICS guarantee ministries",
+          "controlType": "dropdown",
+          "refTypeCode": "ics_gua_guaranteeprovider_ministries"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "",
+      "label": "Item",
+	    "description":"Item",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "hsCode",
+          "description": "HS Code",
+          "controlType" : "hscode",          
+          "refTypeCode": "tariff"
+        },
+        {
+          "id": 2,
+          "type": "string",
+          "label": "productCode",
+          "description": "Product Code",
+          "controlType" : "dropdown",                     
+          "refTypeCode": "productCode"
+        },
+        {
+          "id": 4,
+          "type": "string",
+          "label": "gooodsCondition",
+          "description": "Gooods Condition",
+          "controlType" : "dropdown", 
+          "refTypeCode": "tred7007"
+        },
+        {
+          "id": 5,
+          "type": "string",
+          "label": "countryOfOrigin",
+          "description": "Country Of Origin",
+          "controlType" : "dropdown", 
+          "refTypeCode": "tred3207"
+        },
+        {
+          "id": 6,
+          "type": "string",
+          "label": "goodsQuantity",
+          "description": "Goods Quantity",
+          "controlType" : "input"
+        },
+        
+        {
+          "id": 8,
+          "type": "double",
+          "label": "netWeight",
+          "description": "Net Weight",
+          "controlType" : "input"
+        },
+        {
+          "id": 9,
+          "type": "double",
+          "label": "grossWeight",
+          "description": "Gross Weight",
+          "controlType" : "input"
+        },
+        {
+          "id": 10,
+          "type": "double",
+          "label": "declaredValue",
+          "description": "Declared Value",
+          "controlType" : "input"
+        },
+        {
+          "id": 11,
+          "type": "double",
+          "label": "customsValue",
+          "description": "Customs Value",
+          "controlType" : "input"
+        },
+        {
+          "id": 12,
+          "type": "string",
+          "label": "ics-cv-valuation-method",
+          "description": "Valuation method",
+          "controlType" : "input", 
+          "refTypeCode": "ics-cv-valuation-method"
+        },
+        {
+          "id": 13,
+          "type": "string",
+          "label": "tred9213",
+          "description": "Exemption type",
+          "controlType" : "input", 
+          "refTypeCode": "tred9213"
+        },
+        {
+          "id": 14,
+          "type": "string",
+          "label": "tred9213",
+          "description": "Duty regime type code",
+          "controlType" : "input", 
+          "refTypeCode": "tred9213"
+        },
+        {
+          "id": 15,
+          "type": "string",
+          "label": "tred7065",
+          "description": "Package type description code",
+          "controlType" : "input", 
+          "refTypeCode": "tred7065"
+        },
+        {
+          "id": 16,
+          "type": "string",
+          "label": "tred7007",
+          "description": "Physical or logical state description code",
+          "controlType" : "input", 
+          "refTypeCode": "tred7007"
+        },
+        {
+          "id": 17,
+          "type": "string",
+          "label": "tred6311",
+          "description": "Measurement purpose code qualifier",
+          "controlType" : "input", 
+          "refTypeCode": "tred6311"
+        }                
+      ]
+    },
+	  {
+      "id": 3,
+      "code": "",
+      "label": "shippingInfo",
+	    "description":"Shipping Info",
+      "details": [
+        {
+          "id": 3,
+          "type": "Date",
+          "label": "arrivalDate",
+          "description": "Arrival Date",
+          "controlType": "date"
+        },
+        {
+          "id": 4,
+          "type": "Date",
+          "label": "departureDate",
+          "description": "Departure Date",
+          "controlType": "date"
+        },
+        {
+          "id": 6,
+          "type": "string",
+          "label": "portOfEntryName",
+          "description": "Port Of Entry Name",
+          "controlType": "dropdown",
+          "refTypeCode": "umscodes3225"
+        },
+        {
+          "id": 8,
+          "type": "string",
+          "label": "portOfExitName",
+          "description": "Port Of Exit Name",
+          "controlType": "dropdown",          
+      "refTypeCode": "umscodes3225"
+        },
+        {
+          "id": 10,
+          "type": "string",
+          "label": "destinationPortName",
+          "description": "Destination Port Name",
+          "controlType": "dropdown",
+          "refTypeCode": "umscodes3225"
+        },
+        {
+          "id": 12,
+          "type": "string",
+          "label": "transitTransportName",
+          "description": "Transit Transport Name",
+          "controlType": "input"
+        },
+        {
+          "id": 13,
+          "type": "string",
+          "label": "transitTranportNo",
+          "description": "Transit Tranport No",
+          "controlType": "input"
+        },
+        {
+          "id": 15,
+          "type": "string",
+          "label": "transitTranportMode",
+          "description": "Transit Tranport Mode",
+          "controlType": "dropdown",
+          "refTypeCode": "tred8067"
+        }        
+      ]
+    },	
+	  {
+      "id": 6,
+      "code": "",
+      "label": "transportInfo",
+	    "description":"Transport Info",
+      "details": [
+        {
+          "id": 2,
+          "type": "string",
+          "label": "cargoType",
+          "description": "Cargo Type",
+          "controlType": "dropdown",
+          "refTypeCode": "tred7085"
+        },
+        
+        {
+          "id": 6,
+          "type": "double",
+          "label": "totalPackages",
+          "description": "Total Packages",
+          "controlType": "input"
+        },
+        {
+          "id": 7,
+          "type": "Integer",
+          "label": "totalNumberOfContainers",
+          "description": "Total Number Of Containers",
+          "controlType": "input"
+        }        
+      ]
+    },
+    {
+      "id": 7,
+      "code": "",
+      "label": "containerInfo",
+	    "description":"Container Info",
+      "details": [
+        {
+          "id": 1,
+          "type": "string",
+          "label": "containerNo",
+          "description": "Container No",
+          "controlType": "input"
+        },
+        {
+          "id": 2,
+          "type": "string",
+          "label": "containerTypeSize",
+          "description": "Container Type Size",
+          "controlType": "dropdown",          
+          "refTypeCode": "tred8053"
+        },
+        {
+          "id": 3,
+          "type": "string",
+          "label": "sealType",
+          "description": "Seal Type",
+          "controlType": "dropdown",
+          "refTypeCode": "umscodes4525"
+        },
+        {
+          "id": 4,
+          "type": "string",
+          "label": "numberOfSeals",
+          "description": "Number Of Seals",
+          "controlType": "input"
+        },
+		 {
+          "id": 5,
+          "type": "string",
+          "label": "sealNumbers",
+          "description": "Seal Numbers",
+          "controlType": "input"
+        },		
+        {
+          "id": 7,
+          "type": "double",
+          "label": "totalPackages",
+          "description": "Total Packages",
+          "controlType": "input"
+        },
+        {
+          "id": 8,
+          "type": "Integer",
+          "label": "totalNumberOfContainers",
+          "description": "Total Number Of Containers",
+          "controlType": "input"
+        },
+        {
+          "id": 9,
+          "type": "string",
+          "label": "uniqueConsignmentRefNo",
+          "description": "Unique Consignment RefNo",
+          "controlType": "input"
+        }
+      ]
+    }
+  ]
+}

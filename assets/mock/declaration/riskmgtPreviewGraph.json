@@ -1,0 +1,290 @@
+{
+    "status": "success",
+    "data": {
+        "id": 355,
+        "threatSetSummary": [
+            {
+                "createDate": 1562077055497,
+                "updateDate": 1562077055497,
+                "createBy": "RiskMan",
+                "updateBy": null,
+                "id": 134,
+                "name": "VAL",
+                "score": 6.0,
+                "level": 2,
+                "deductive": false
+            },
+            {
+                "createDate": 1562077055498,
+                "updateDate": 1562077055498,
+                "createBy": "RiskMan",
+                "updateBy": null,
+                "id": 135,
+                "name": "REV",
+                "score": 81.0,
+                "level": 3,
+                "deductive": false
+            },
+            {
+                "createDate": 1562077055498,
+                "updateDate": 1562077055498,
+                "createBy": "RiskMan",
+                "updateBy": null,
+                "id": 136,
+                "name": "IPR",
+                "score": 9.0,
+                "level": 2,
+                "deductive": false
+            }
+        ],
+        "declarationInfo": {
+            "decId": "a9d80e0a-a4e4-4803-a76a-5c3b00583033",
+            "decCode": "020720191799"
+        },
+        "detail": [
+            {
+                "id": 393,
+                "summaryInfoId": 355,
+                "lineCode": null,
+                "lineSeq": null,
+                "rule": {
+                    "ruleId": "5",
+                    "rule": "Importer name contains 'Bank'.",
+                    "category": "Trader Risk",
+                    "score": 9.0,
+                    "indicator": "Importer is a bank.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "imName",
+                    "action": "Verify for goods that would not typically be imported by a banking institution.",
+                    "level": 2,
+                    "riskOwner": "CustomsInvestigations",
+                    "insCaseAction": "DV"
+                }
+            },
+            {
+                "id": 394,
+                "summaryInfoId": 355,
+                "lineCode": "4189671b-4fba-4bb1-b2ef-c99613df563b",
+                "lineSeq": 1,
+                "rule": {
+                    "ruleId": "6",
+                    "rule": "Country of origin is on list of source countries deemed high risk for IPR Violations.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Country of origin is high risk for IPR violations.",
+                    "trs": "IPR",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance with IPR regulations. Inspect if required.",
+                    "level": 2,
+                    "riskOwner": "CustomsInvestigations",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 395,
+                "summaryInfoId": 355,
+                "lineCode": "4189671b-4fba-4bb1-b2ef-c99613df563b",
+                "lineSeq": 1,
+                "rule": {
+                    "ruleId": "16",
+                    "rule": "Goods country of supply does not match country of origin.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Inconsistency between country of supply and origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance of origin.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 396,
+                "summaryInfoId": 355,
+                "lineCode": "4189671b-4fba-4bb1-b2ef-c99613df563b",
+                "lineSeq": 1,
+                "rule": {
+                    "ruleId": "1",
+                    "rule": "Importer and Consignor (Supplier) are the same entity.",
+                    "category": "Trader Risk",
+                    "score": 6.0,
+                    "indicator": "Importer and Consignor (foreign supplier) are the same.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_impoSuppRls",
+                    "action": "Verify for non-conformance of valuation and transfer pricing regulations.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV"
+                }
+            },
+            {
+                "id": 397,
+                "summaryInfoId": 355,
+                "lineCode": "55cd54d5-1481-4dcf-9344-348eb11b08a2",
+                "lineSeq": 2,
+                "rule": {
+                    "ruleId": "3",
+                    "rule": "Commodity code is not on list of commodity codes from Burkina Faso.",
+                    "category": "Commodity Risk",
+                    "score": 9.0,
+                    "indicator": "Commodity is inconsistent with probable country of origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_cmdtClsf",
+                    "action": "Verify for non-conformance of origin. Check supporting documents for evidence of tampering or 'Photoshopping'.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/PI"
+                }
+            },
+            {
+                "id": 398,
+                "summaryInfoId": 355,
+                "lineCode": "55cd54d5-1481-4dcf-9344-348eb11b08a2",
+                "lineSeq": 2,
+                "rule": {
+                    "ruleId": "16",
+                    "rule": "Goods country of supply does not match country of origin.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Inconsistency between country of supply and origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance of origin.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 399,
+                "summaryInfoId": 355,
+                "lineCode": "18c0fb78-4041-4941-a6fc-e85bf0d22219",
+                "lineSeq": 3,
+                "rule": {
+                    "ruleId": "4",
+                    "rule": "Commodity code is not on list of commodity codes from Nigeria.",
+                    "category": "Commodity Risk",
+                    "score": 9.0,
+                    "indicator": "Commodity is inconsistent with probable country of origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_cmdtClsf",
+                    "action": "Verify for non-conformance of origin. Inspect as required.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/PI"
+                }
+            },
+            {
+                "id": 400,
+                "summaryInfoId": 355,
+                "lineCode": "18c0fb78-4041-4941-a6fc-e85bf0d22219",
+                "lineSeq": 3,
+                "rule": {
+                    "ruleId": "16",
+                    "rule": "Goods country of supply does not match country of origin.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Inconsistency between country of supply and origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance of origin.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 401,
+                "summaryInfoId": 355,
+                "lineCode": "c309f10f-769f-4647-b7ca-f74127704776",
+                "lineSeq": 4,
+                "rule": {
+                    "ruleId": "8",
+                    "rule": "Net weight of vehicle is low.",
+                    "category": "Commodity Risk",
+                    "score": 6.0,
+                    "indicator": "Misdeclared goods.",
+                    "trs": "VAL",
+                    "type": "inductive",
+                    "key": "declarationLines_cmdtClsf",
+                    "action": "Verify the manufacturers technical specification for this vehicle.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/PI"
+                }
+            },
+            {
+                "id": 402,
+                "summaryInfoId": 355,
+                "lineCode": "c309f10f-769f-4647-b7ca-f74127704776",
+                "lineSeq": 4,
+                "rule": {
+                    "ruleId": "16",
+                    "rule": "Goods country of supply does not match country of origin.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Inconsistency between country of supply and origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance of origin.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 403,
+                "summaryInfoId": 355,
+                "lineCode": "9535ce4e-b4ba-4b2c-9143-304299c3af34",
+                "lineSeq": 5,
+                "rule": {
+                    "ruleId": "16",
+                    "rule": "Goods country of supply does not match country of origin.",
+                    "category": "Country Risk",
+                    "score": 9.0,
+                    "indicator": "Inconsistency between country of supply and origin.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_ctrOrigin",
+                    "action": "Verify for non-conformance of origin.",
+                    "level": 2,
+                    "riskOwner": "CustomsValuation",
+                    "insCaseAction": "DV/SAMP"
+                }
+            },
+            {
+                "id": 404,
+                "summaryInfoId": 355,
+                "lineCode": "9535ce4e-b4ba-4b2c-9143-304299c3af34",
+                "lineSeq": 5,
+                "rule": {
+                    "ruleId": "9",
+                    "rule": "Commodity description contains commonly used terms to avoid an accurate description.",
+                    "category": "Commodity Risk",
+                    "score": 3.0,
+                    "indicator": "Commodity description is vague or masks true nature of goods.",
+                    "trs": "REV",
+                    "type": "inductive",
+                    "key": "declarationLines_descGoods",
+                    "action": "Verify all goods have been correctly classified. Notify declarant the commodity description is invalid.",
+                    "level": 1,
+                    "riskOwner": "CustomsInvestigations",
+                    "insCaseAction": "DV/SAMP"
+                }
+            }
+        ],
+        "actions": "DV,PI,SAMP",
+        "status": 1,
+        "caseId": null
+    }
+}

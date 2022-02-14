@@ -1,0 +1,14 @@
+{
+  "Error.invalid.status": "Estado de documento inválido, no está en modo borrador",
+  "Error.dmn.result.empty": "Resultado DMN no tiene que estar vacío",
+  "Error.des.response.invalid": "Respuesta no esperada del servicio DES:",
+  "Error.delete.child": "No se pudo eliminar el elemento hijo",
+  "Error.already.inprocess": "No es posible actualizar ya que se encuentra en proceso",
+  "Error.Invalid.Identifier": "Status must have Identifier",
+  "Error.upload.file": "Error al cargar declaración",	
+  "Error.invalid.xsd": "Cargar XML es inválido",
+  "Error.upload.declaration": "Error en el procesamiento de la declaración",
+  "Error.invalid.mimetype": "No fue posible determinar el tipo de archivo",
+  "Error.clone.issue": "Error al clonar",
+  "Error.declaration.general": ""
+}

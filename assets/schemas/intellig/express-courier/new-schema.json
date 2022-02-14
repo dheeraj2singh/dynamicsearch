@@ -1,0 +1,982 @@
+{
+    "ecConsolidatedBl": {
+        "blNo": {
+          "uid": "01225",
+          "labels": [
+            "BL No"
+          ],
+          "tooltip": "Tooltip.declaration.functionCode",
+          "format": "n..2",
+          "validations": {
+            "systems": "RDM",
+            "digits-integer": "2",
+            "digits-fraction": "0",
+            "pattern": "^\\d{0,2}$"
+          },
+          "tabs": "HeaderInfo",
+          "systemField": false,
+          "mandatory": false,
+          "type": "String"
+        },
+        "manifestNo" : {
+          "uid": "01225",
+          "labels": [
+            "Manifest No"
+          ],
+          "tooltip": "Tooltip.declaration.functionCode",
+          "format": "n..2",
+          "validations": {
+            "systems": "RDM",
+            "digits-integer": "2",
+            "digits-fraction": "0",
+            "pattern": "^\\d{0,2}$"
+          },
+          "tabs": "HeaderInfo",
+          "systemField": false,
+          "mandatory": false,
+          "type": "String"
+        }   
+    },
+    "ecManifestBl": {
+      "consigneeCity": {
+        "uid": "01225",
+        "labels": [
+          "Consignee City"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "tred3453",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeCountryCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Country Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeDocumentNo" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Document No"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeDocumentType" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Document Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-document-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeEmail" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Email"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeFax" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Fax"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeName" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeStreet" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Street"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeTel" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Tel"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeType" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-trader-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeZipCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Zip Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consigneeZoneName" : {
+        "uid": "01225",
+        "labels": [
+          "Consignee Zone Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },   
+      "consignorCity" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor City"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorCountryCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Country Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorDocumentNo" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Document No"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorDocumentType" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Document Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-document-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorEmail" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Email"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorFax" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Fax"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorName" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorStreet" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Street"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorZipCode" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Zip Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorType" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-trader-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "consignorZoneName" : {
+        "uid": "01225",
+        "labels": [
+          "Consignor Zone Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "expressType" : {
+        "uid": "01225",
+        "labels": [
+          "Express Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-express-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "flightCharge" : {
+        "uid": "01225",
+        "labels": [
+          "Flight Charge"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "Double"
+      },
+      "goodsName" : {
+        "uid": "01225",
+        "labels": [
+          "Goods Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "grossWeight" : {
+        "uid": "01225",
+        "labels": [
+          "Gross Weight"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "Double"
+      },
+      "houseBLNo" : {
+        "uid": "01225",
+        "labels": [
+          "House BL No"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "lastPortCode" : {
+        "uid": "01225",
+        "labels": [
+          "Last Port Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-port-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "loadingPortCode" : {
+        "uid": "01225",
+        "labels": [
+          "Loading Port Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-port-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyCity" : {
+        "uid": "01225",
+        "labels": [
+          "Notify City"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyCode" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyCountryCode" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Country Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-country-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyDocumentNo" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Document No"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyDocumentType" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Document Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-document-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyEmail" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Email"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyFax" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Fax"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyName" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyStreet" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Street"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyTel" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Tel"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyType" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-trader-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyZipCode" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Zip Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "notifyZoneName" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Zone Name"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "packageQty" : {
+        "uid": "01225",
+        "labels": [
+          "Notify Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "Integer"
+      },
+      "packageUnitCode" : {
+        "uid": "01225",
+        "labels": [
+          "Package Unit Code"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-unit-code",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "transitType" : {
+        "uid": "01225",
+        "labels": [
+          "Transit Type"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "refTypeCode": "ics-label-transit-type",
+        "parentRefType": "",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "String"
+      },
+      "value" : {
+        "uid": "01225",
+        "labels": [
+          "Value"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "Double"
+      },
+      "volume" : {
+        "uid": "01225",
+        "labels": [
+          "Volume"
+        ],
+        "tooltip": "Tooltip.declaration.functionCode",
+        "format": "n..2",
+        "validations": {
+          "systems": "RDM",
+          "digits-integer": "2",
+          "digits-fraction": "0",
+          "pattern": "^\\d{0,2}$"
+        },
+        "tabs": "HeaderInfo",
+        "systemField": false,
+        "mandatory": false,
+        "type": "Double"
+      }
+    }          
+}

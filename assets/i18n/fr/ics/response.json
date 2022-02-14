@@ -1,0 +1,14 @@
+{
+  "Error.invalid.status": "Statut du document non valide, pas en mode brouillon",
+  "Error.dmn.result.empty": "Le résultat DMN ne doit pas être vide !",
+  "Error.des.response.invalid": "Réponse du service DES non attendue",
+  "Error.delete.child": "Échec de la suppression du sous-élément",
+  "Error.already.inprocess": "Non autorisé à mettre à jour car déjà en cours !",
+  "Error.Invalid.Identifier": "Le statut doit avoir un identifiant",
+  "Error.upload.file": "Déclaration d'erreur de téléchargement",
+  "Error.invalid.xsd": "Le XML téléchargé n'est pas valide",
+  "Error.upload.declaration": "Erreur lors du traitement de la déclaration",
+  "Error.invalid.mimetype": "Impossible de déterminer le type de fichier",
+  "Error.clone.issue": "Problème d'erreur lors du clonage",
+  "Error.declaration.general": ""
+}

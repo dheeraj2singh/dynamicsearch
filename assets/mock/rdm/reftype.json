@@ -1,0 +1,161 @@
+{
+  "content": [
+      {
+          "id": 1,
+          "label": "Pass Type",
+          "description": "Pass Type",
+          "status": "Active",
+          "parentRefType": null,
+          "attributesSchema": [],
+          "refValue": [
+              {
+                  "id": 3,
+                  "refTypeId": 1,
+                  "parentRefValue": 0,
+                  "code": "Visitor Pass",
+                  "description": "Visitor Pass",
+                  "effectiveDateFrom": "2019-06-19T20:00:00.000+0000",
+                  "refLang": [
+                      {
+                          "id": 4,
+                          "langCode": "en",
+                          "langDescription": "Visitor Pass"
+                      }
+                  ],
+                  "attributes": null
+              },
+              {
+                  "id": 6,
+                  "refTypeId": 1,
+                  "parentRefValue": 0,
+                  "code": "Temporary  Gate Pass",
+                  "description": "Temporary  Gate Pass",
+                  "effectiveDateFrom": "2019-06-19T20:00:00.000+0000",
+                  "refLang": [
+                      {
+                          "id": 7,
+                          "langCode": "en",
+                          "langDescription": "Temporary  Gate Pass"
+                      }
+                  ],
+                  "attributes": null
+              }
+          ]
+      },
+      {
+          "id": 9,
+          "label": "Test",
+          "description": "Test",
+          "status": null,
+          "parentRefType": null,
+          "attributesSchema": [],
+          "refValue": [
+              {
+                  "id": 11,
+                  "refTypeId": 9,
+                  "parentRefValue": null,
+                  "code": "IN",
+                  "description": "India",
+                  "effectiveDateFrom": null,
+                  "refLang": [],
+                  "attributes": null
+              }
+          ]
+      },
+      {
+          "id": 13,
+          "label": "",
+          "description": "",
+          "status": null,
+          "parentRefType": null,
+          "attributesSchema": [],
+          "refValue": [
+              {
+                  "id": 15,
+                  "refTypeId": 13,
+                  "parentRefValue": null,
+                  "code": "IN",
+                  "description": "Dubai",
+                  "effectiveDateFrom": null,
+                  "refLang": [],
+                  "attributes": null
+              },
+              {
+                  "id": 17,
+                  "refTypeId": 13,
+                  "parentRefValue": null,
+                  "code": "",
+                  "description": "",
+                  "effectiveDateFrom": null,
+                  "refLang": [],
+                  "attributes": null
+              }
+          ]
+      },
+      {
+          "id": 19,
+          "label": "Employee Type",
+          "description": "Employee Type",
+          "status": null,
+          "parentRefType": null,
+          "attributesSchema": [],
+          "refValue": [
+              {
+                  "id": 21,
+                  "refTypeId": 19,
+                  "parentRefValue": null,
+                  "code": "Employee",
+                  "description": "Employee",
+                  "effectiveDateFrom": null,
+                  "refLang": [],
+                  "attributes": null
+              }
+          ]
+      },
+      {
+          "id": 25,
+          "label": "EmployeeType",
+          "description": "EmployeeType",
+          "status": null,
+          "parentRefType": null,
+          "attributesSchema": [],
+          "refValue": [
+              {
+                  "id": 27,
+                  "refTypeId": 25,
+                  "parentRefValue": null,
+                  "code": "Employee",
+                  "description": "Employee",
+                  "effectiveDateFrom": null,
+                  "refLang": [],
+                  "attributes": null
+              }
+          ]
+      }
+  ],
+  "pageable": {
+      "sort": {
+          "sorted": false,
+          "unsorted": true,
+          "empty": true
+      },
+      "pageSize": 20,
+      "pageNumber": 0,
+      "offset": 0,
+      "paged": true,
+      "unpaged": false
+  },
+  "totalElements": 5,
+  "last": true,
+  "totalPages": 1,
+  "first": true,
+  "sort": {
+      "sorted": false,
+      "unsorted": true,
+      "empty": true
+  },
+  "number": 0,
+  "numberOfElements": 5,
+  "size": 20,
+  "empty": false
+}
